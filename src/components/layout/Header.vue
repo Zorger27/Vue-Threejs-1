@@ -9,9 +9,12 @@ import languageSwitcher from "@/components/util/LanguageSwitcher.vue";
     }
   },
   methods: {
-    prg3() {
-      this.$router.push('/project3');
-    },
+    navigateToPortfolio () {
+      window.open('https://zorin.expert', '_blank');
+    }
+    // prg3() {
+    //   this.$router.push('/project3');
+    // },
   },
   components: {languageSwitcher},
 })
@@ -31,7 +34,7 @@ export default class Header extends Vue {
       <div class="burger-menu" @click="showMenu = !showMenu">
         <i :class="['fa', showMenu ? 'fa-times' : 'fa-bars', 'burger-menu-icon']"></i>
       </div>
-      <div class="logo" @click="prg3">
+      <div class="logo" @click="navigateToPortfolio">
         <img :src="getHeaderLogoImage" alt="Header Logo Image">
       </div>
       <language-switcher class="language"></language-switcher>
