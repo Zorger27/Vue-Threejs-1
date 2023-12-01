@@ -1,0 +1,193 @@
+#app {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+  background-color: white;
+  font-size: 18px;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+line{
+  content:'';
+  display:block;
+  width:75%;
+  border:1px solid;
+  margin-bottom: 4px;
+}
+svg{
+  max-width: 100%;
+  height: auto;
+  max-height:100%
+}
+a {text-decoration: none;color: indigo;}
+a:hover {cursor: pointer;text-decoration: underline;color: darkblue;}
+h1 {text-align: center;}
+.slider {
+  width: 45%;
+  overflow: hidden;
+  margin: 0.3rem auto 0.3rem auto;
+  //border: 1px solid rgba(112, 111, 111, 0.9);
+  //border-radius: 5px;
+  //box-shadow: 3px 3px 4px 0 lightgrey;
+  padding: 0.5rem;
+  @media(max-width:1020px) {width: 85%;}
+  @media(max-width:768px) {width: 95%;}
+}
+.currentUser {color: mediumvioletred;}
+.diplom, .title {font-size: 2.2rem}
+.certificates {
+  ol {
+    font-size: 1.4rem;
+    li {padding: 0.2rem;}
+  }
+}
+.certificate, .diploma, .prj{
+  display: inline-flex;
+  padding: 1rem;
+  text-align: left;
+  max-width: 30rem;
+  a {text-decoration: none;color: inherit;}
+  h3 {margin-bottom: 0;margin-top: 0;}
+  transition: border-color .2s ease-in-out, background-color .2s, box-shadow .2s;
+  .block {
+    border: 1px solid rgba(112, 111, 111, 0.6);
+    border-radius: 5px;
+    padding: 1rem;
+    //box-shadow: 3px 3px 4px 0 grey;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
+    transition: border-color .2s ease-in-out, background-color .2s, box-shadow .2s;
+  }
+}
+.diploma {
+  a {background: linear-gradient(to bottom, rgb(229, 251, 255), rgb(255, 240, 244)) no-repeat center;}
+  a:hover {
+    border: 1px solid #780485;
+    background-color: white;
+    background-image:
+      radial-gradient(at 0% 0%, hsla(189, 100%, 56%, 1) 0px, transparent 50%),
+      radial-gradient(at 0% 100%, hsla(343, 100%, 76%, 1) 0px, transparent 50%),
+      radial-gradient(at 80% 100%, hsla(28, 100%, 74%, 1) 0px, transparent 50%),
+      radial-gradient(at 80% 0%, hsla(242, 100%, 70%, 1) 0px, transparent 50%);
+    //box-shadow: 3px 3px 4px 0 rgba(178, 25, 170, 0.5);
+    box-shadow: 3px 3px 4px 0 rgb(101, 29, 98);
+    //box-shadow: 0 4px 8px rgba(178, 25, 170, 0.5);
+    h3 {color: black;}
+  }
+  h3 {color: red;}
+  //.block {background: linear-gradient(to bottom, rgb(229, 251, 255), rgb(255, 240, 244)) no-repeat center;}
+}
+.certificate {
+  a:hover {
+    border: 1px solid lightskyblue;
+    box-shadow: 3px 3px 4px 0 lightblue;
+    //box-shadow: 0 4px 8px lightblue;
+    h3 {color: darkblue;}
+  }
+  h3 {color: darkgreen;}
+  .block {background: none;}
+}
+.prj {
+  a:hover {
+    border: 1px solid goldenrod;
+    background: none;
+    box-shadow: 3px 3px 4px 0 lightgoldenrodyellow;
+    //box-shadow: 0 4px 8px lightgoldenrodyellow;
+    h3 {color: #493606;}
+  }
+  h3 {color: #af0661;}
+  .block {background: rgba(194, 211, 250, 0.1);}
+}
+.attention {color: #a20909;}
+.attention:hover {color: red;}
+.fa, .fas {cursor: pointer;}
+.fa.fa-th {color: deepskyblue; margin-right: 0.5rem;}
+.fa.fa-list {color: darkgoldenrod; margin-right: 0.5rem;}
+.fas.fa-arrow-alt-circle-down {color: mediumvioletred;}
+.fas.fa-arrow-alt-circle-up {color: lightseagreen;}
+
+.table {
+  display: inline-flex;
+  font-size: 2rem;
+  color: black;
+  //border: 1px solid #ddd;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  padding: 1rem;
+  margin: 1rem auto;
+  border-radius: 5px;
+  background-color: rgba(220, 219, 219, 0.2);
+  //box-shadow: 3px 3px 4px 0 grey;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
+  table {border-collapse: collapse;}
+  tr, td, th {border: 1px solid #ddd;padding: 0.5rem;word-wrap: normal}
+  .nomer {max-width: 70px;}
+  .name {
+    text-align: left;
+    color: deepskyblue;
+    width: 320px;
+    a {color: inherit;text-decoration: none;}
+    a:hover {color: #2e768d;}
+  }
+  .version, .price {text-align: right;color: deeppink;max-width: 230px;}
+  .number, .grade, .date {max-width: 230px; font-size: 1.8rem}
+  .grade {color: deeppink;}
+}
+
+@media(max-width:1020px) {
+  line {width: 100%;}
+  .diplom, .title {font-size: 1.8rem}
+  .header-logo {
+    svg {
+      max-width: 100%;
+      height: 4rem;
+      max-height:100%;
+    }
+  }
+  .certificates {
+    ol {
+      font-size: 1.3rem;
+      li {padding: 0.3rem;}
+    }
+  }
+  .diploma, .certificate, .prj {
+    padding: 0.6rem;
+    //max-width: 25rem;
+    .block {font-size: 1rem;padding: 0.6rem;}
+  }
+  .table {
+    font-size: 1.60rem;
+    padding: 0.8rem;
+    margin: 0.5rem auto;
+    tr, td, th {padding: 0.4rem;}
+    .number, .grade, .date {font-size: 1.4rem}
+  }
+}
+@media(max-width:768px) {
+  line {width: 100%;}
+  .diplom, .title {font-size: 1.7rem}
+  h1 {font-size: xx-large;}
+  h2 {font-size: x-large;}
+  .certificates {
+    ol {
+      font-size: 1.2rem;
+      li {padding: 0.3rem;}
+    }
+  }
+  .diploma, .certificate, .prj {
+    padding: 0.3rem;
+    //max-width: 18rem;
+    .block {font-size: 0.78rem;padding: 0.4rem;}
+  }
+  .table {
+    font-size: 1.50rem;
+    padding: 0;
+    margin: 0.5rem auto;
+    border: none;
+    border-radius: unset;
+    tr, td, th {padding: 0.3rem;}
+    .nomer, .name, .version, .price {width: max-content;}
+    .number, .grade, .date {width: max-content;}
+  }
+}
