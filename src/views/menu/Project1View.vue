@@ -19,16 +19,11 @@ export default class Project1 extends Vue {
 <style lang="scss" scoped>
 .container {
   flex: 1 0 auto;
-  //background: linear-gradient(to bottom, rgb(255, 249, 229), rgb(255, 240, 244)) no-repeat center;
+  background: linear-gradient(to bottom, rgb(255, 249, 229), rgb(255, 240, 244)) no-repeat center;
 
-  background-image: url("@/assets/background/background02.jpg");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-
-  h1 {
-    color: purple;
-  }
-
+  //background-image: url("@/assets/background/background02.jpg");
+  //background-position: center;
+  //background-size: cover;
+  //background-repeat: no-repeat;
 }
 </style>
