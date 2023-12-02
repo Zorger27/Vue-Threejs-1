@@ -31,19 +31,9 @@ export default class About extends Vue {}
       {{$t ('about.technologies')}} <i @click="changeView"><span :class="['fa', tableView ? 'fa-list' : 'fa-th']"></span></i>
     </h1>
     <line></line>
-<!--    <h2 @click="showMore = !showMore" class="more">{{$t ('about.more01')}}<i style="color: red; margin-left: 0.5rem"-->
-<!--                                                                                               class="fas fa-hand-pointer"></i></h2>-->
-<!--    <p v-if="showMore" style="margin: 0">{{$t ('about.more02')}}</p>-->
-<!--    <p v-if="showMore" style="margin: 0">{{$t ('about.more03')}}</p>-->
-<!--    <h3 v-if="showMore" style="color: deeppink; margin: 0.5rem">{{$t ('about.more04')}}</h3>-->
-<!--    <h3 v-if="showMore" style="color: deeppink; margin: 0.5rem">{{$t ('about.more05')}}</h3>-->
-<!--    <line></line>-->
     <div v-if="tableView" class="table">
       <table>
         <thead>
-<!--        <tr>-->
-<!--          <th class="title" colspan="3">{{ $t('about.technologies') }}</th>-->
-<!--        </tr>-->
         <tr>
           <th>№</th>
           <th>{{ $t('about.name') }}</th>
@@ -59,8 +49,7 @@ export default class About extends Vue {}
         </tbody>
       </table>
     </div>
-    <div v-else class="div">
-<!--      <h1 class="title" style="text-decoration: underline">{{ $t('about.technologies') }}</h1>-->
+    <div v-else class="inner">
       <div v-for="info in infoStore.state.infoStore" :key="info.id" class="prj">
         <a class="block" :href="info.url" title="In more detail..." target="_blank">
           <h3>
@@ -81,57 +70,107 @@ export default class About extends Vue {}
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  .main {color: mediumvioletred;}
-  .name {width: 400px;}
-  .version {width: 150px;}
-}
-.prj a {
-  background: inherit;
-  padding: 1.2rem;
-  transition: border-color .2s ease-in-out, background-color .2s, box-shadow .2s;
-}
-.prj a:hover {
-  //background: linear-gradient(to bottom, rgb(229, 251, 255), rgb(255, 240, 244)) no-repeat center;
-  background-image: url("@/assets/background/background04.jpg");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  //box-shadow: 3px 3px 4px 0 rgba(0, 0, 0, 0.5);
-  border-color: rebeccapurple;
-  box-shadow: 3px 3px 4px mediumpurple;
-  //box-shadow: 3px 3px 4px 0 lightgrey;
-  //border-color: #bbeafa;
-}
+  h1 {
+    font-size: 2.5rem;
+    margin: 0.7rem auto;
+    color: mediumvioletred;
+  }
+  .prj{
+    display: inline-flex;
+    padding: 1rem;
+    max-width: 30rem;
+    transition: border-color .2s ease-in-out, background-color .2s, box-shadow .2s;
+    a {
+      text-decoration: none;
+      color: inherit;
+      background: inherit;
+    }
+    a:hover {
+      background-image: url("@/assets/background/background04.jpg");
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      border-color: rebeccapurple;
+      box-shadow: 3px 3px 4px mediumpurple;
+    }
+    h3 {
+      margin-bottom: 0;
+      margin-top: 0;
+      color: #af0661;
+    }
+    .block {
+      font-size: 1.2rem;
+      border: 1px solid rgba(112, 111, 111, 0.6);
+      border-radius: 5px;
+      padding: 1rem;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
+      transition: border-color .2s ease-in-out, background-color .2s, box-shadow .2s;
+    }
+  }
 
-.table {
-  background: inherit;
-  margin-bottom: 1rem;
-
-}
-.title {
-  color: darkgoldenrod;
-  font-size: 2.5rem;
-}
-.more {
-  display: inline-flex;
-  color: lightseagreen;
-  cursor: pointer;
-  border-bottom: 1px solid transparent;
-  margin: 0.5rem;
-}
-
-.more:hover, :focus {
-  border-bottom: 1px solid lightseagreen;
+  .table {
+    display: inline-flex;
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: black;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    padding: 1rem;
+    margin: 1rem auto;
+    border-radius: 5px;
+    background: inherit;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
+    tr, td, th {border: 1px solid #ddd;padding: 0.5rem;word-wrap: normal}
+    .nomer {max-width: 70px;}
+    .name {
+      text-align: left;
+      color: deepskyblue;
+      width: 400px;
+      a {color: inherit;text-decoration: none;}
+      a:hover {color: #2e768d;}
+    }
+    .version {text-align: right;color: deeppink;width: 150px;}
+  }
 }
 
 @media(max-width: 1020px) {
-  .title {font-size: 2rem;}
-  .prj a {padding: 1rem;}
+  .about {
+    h1 {font-size: 2.3rem;margin: 0.6rem auto;}
+
+    .prj {
+      padding: 0.8rem;
+      .block {
+        padding: 0.8rem;
+        font-size: 1rem;
+      }
+    }
+    .table {
+      font-size: 1.40rem;
+      padding: 0.8rem;
+      margin: 0.5rem auto 0.8rem;
+      tr, td, th {padding: 0.4rem;}
+    }
+  }
 }
 @media (max-width: 768px) {
-  .title {font-size: 1.6rem;}
-  .table {margin-bottom: 0.5rem;}
-  .prj a {padding: 0.8rem;}
-  .div {margin-bottom: 0.5rem;}
+  .about {
+    h1 {font-size: 2rem;margin: 0.5rem auto;}
+    .inner {margin-bottom: 0.3rem;}
+
+    .prj {
+      padding: 0.6rem;
+      .block {
+        font-size: 0.8rem;
+        padding: 0.6rem;
+      }
+    }
+    .table {
+      font-size: 1.20rem;
+      padding: 0;
+      margin: 0.5rem auto 0.8rem;
+      border: none;
+      border-radius: unset;
+      tr, td, th {padding: 0.3rem;}
+    }
+  }
 }
 </style>

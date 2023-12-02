@@ -25,5 +25,18 @@ export default class Project2 extends Vue {
   //background-position: center;
   //background-size: cover;
   //background-repeat: no-repeat;
+
+  h1 {font-size: 2.5rem;margin: 0.7rem auto;color: black;}
+}
+@media(max-width: 1020px) {
+  .container {
+    h1 {font-size: 2.3rem;margin: 0.6rem auto;}
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    h1 {font-size: 2rem;margin: 0.5rem auto;}
+  }
 }
 </style>

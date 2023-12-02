@@ -63,12 +63,18 @@ const state = {
       },
       {
         id: 11,
+        title: "Axios",
+        version: "1.6.2",
+        url: "https://axios-http.com"
+      },
+      {
+        id: 12,
         title: "Google Search Console",
         version: "",
         url: "https://search.google.com/search-console"
       },
       {
-        id: 12,
+        id: 13,
         title: "Google Analytics",
         version: "4.0",
         url: "https://analytics.google.com"
