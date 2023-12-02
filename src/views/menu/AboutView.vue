@@ -11,7 +11,6 @@ import infoStore from "@/store/modules/service/infoStore";
   data() {
     return {
       tableView: false,
-      // showMore: false
     }
   },
   methods: {
