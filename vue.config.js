@@ -1,7 +1,7 @@
 const CopyWebpackPlugin = require('copy-webpack-plugin')
 const HtmlWebpackTagsPlugin = require('html-webpack-tags-plugin')
 const FaviconsWebpackPlugin = require('favicons-webpack-plugin')
-// const SitemapPlugin = require('sitemap-webpack-plugin').default;
+const SitemapPlugin = require('sitemap-webpack-plugin').default;
 
 module.exports = {
   pages: {
@@ -25,7 +25,6 @@ module.exports = {
       new HtmlWebpackTagsPlugin({
         links: [
           {
-            // path: 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css',
             path: 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css',
             attributes: {
               rel: 'stylesheet'
@@ -46,9 +45,9 @@ module.exports = {
           {attributes: {property: 'twitter:title', content: 'Template'}},
           {attributes: {property: 'og:description', content: 'Vue.js Start template by Zorger'}},
           {attributes: {property: 'twitter:description', content: 'Vue.js Start template by Zorger'}},
-          // {attributes: {property: 'og:image', content: 'https://zorin.expert/assets/ogimage/menu/Image_All.jpg'}},
-          // {attributes: {property: 'twitter:image', content: 'https://zorin.expert/assets/ogimage/menu/Image_All.jpg'}},
-          // {attributes: {property: 'og:url', content: 'https://Zorin.Expert'}},
+          {attributes: {property: 'og:image', content: 'https://vue-start-template.vercel.app/assets/ogimage/Image_All.jpg'}},
+          {attributes: {property: 'twitter:image', content: 'https://vue-start-template.vercel.app/assets/ogimage/Image_All.jpg'}},
+          {attributes: {property: 'og:url', content: 'https://vue-start-template.vercel.app'}},
           {attributes: {property: 'og:type', content: 'website'}},
           {attributes: {property: 'twitter:card', content: 'summary_large_image'}}
         ]
@@ -66,19 +65,18 @@ module.exports = {
           developerURL: null
         }
       }),
-      // new SitemapPlugin({
-      //   // base: 'https://zorin.expert', // Базовый URL моего сайта
-      //   // paths: [
-      //   //   { path: '/', priority: 1, changefreq: 'always' },
-      //   //   { path: '/projects', priority: 1, changefreq: 'daily' },
-      //   //   { path: '/experience', priority: 1, changefreq: 'daily' },
-      //   //   { path: '/skills', priority: 1, changefreq: 'daily' },
-      //   //   { path: '/about', priority: 1, changefreq: 'always' },
-      //   // ],
-      //   options: {
-      //     skipgzip: true
-      //   },
-      // }),
+      new SitemapPlugin({
+        base: 'https://vue-start-template.vercel.app', // Базовый URL моего сайта
+        paths: [
+          { path: '/', priority: 1, changefreq: 'always' },
+          { path: '/project2', priority: 1, changefreq: 'daily' },
+          { path: '/project3', priority: 1, changefreq: 'daily' },
+          { path: '/about', priority: 1, changefreq: 'always' },
+        ],
+        options: {
+          skipgzip: true
+        },
+      }),
     ]
   }
 }

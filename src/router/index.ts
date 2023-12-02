@@ -21,14 +21,14 @@ const routes: Array<RouteRecordRaw> = [
           property: 'og:description',
           content: 'Project № 1'
         },
-        // {
-        //   property: 'og:image',
-        //   content: 'https://zorin.expert/assets/ogimage/menu/OG_Image_Home.jpg'
-        // },
-        // {
-        //   property: 'og:url',
-        //   content: 'https://Zorin.Expert'
-        // },
+        {
+          property: 'og:image',
+          content: 'https://vue-start-template.vercel.app/assets/ogimage/Image_All.jpg'
+        },
+        {
+          property: 'og:url',
+          content: 'https://vue-start-template.vercel.app'
+        },
         {
           property: 'og:type',
           content: 'website'
@@ -51,14 +51,14 @@ const routes: Array<RouteRecordRaw> = [
           property: 'og:description',
           content: 'Project № 2'
         },
-        // {
-        //   property: 'og:image',
-        //   content: 'https://zorin.expert/assets/ogimage/menu/OG_Image_Projects.jpg'
-        // },
-        // {
-        //   property: 'og:url',
-        //   content: 'https://Zorin.Expert'
-        // },
+        {
+          property: 'og:image',
+          content: 'https://vue-start-template.vercel.app/assets/ogimage/Image_All.jpg'
+        },
+        {
+          property: 'og:url',
+          content: 'https://vue-start-template.vercel.app'
+        },
         {
           property: 'og:type',
           content: 'website'
@@ -81,14 +81,14 @@ const routes: Array<RouteRecordRaw> = [
           property: 'og:description',
           content: 'Project № 3'
         },
-        // {
-        //   property: 'og:image',
-        //   content: 'https://zorin.expert/assets/ogimage/menu/OG_Image_Education.jpg'
-        // },
-        // {
-        //   property: 'og:url',
-        //   content: 'https://Zorin.Expert'
-        // },
+        {
+          property: 'og:image',
+          content: 'https://vue-start-template.vercel.app/assets/ogimage/Image_All.jpg'
+        },
+        {
+          property: 'og:url',
+          content: 'https://vue-start-template.vercel.app'
+        },
         {
           property: 'og:type',
           content: 'website'
@@ -111,14 +111,14 @@ const routes: Array<RouteRecordRaw> = [
           property: 'og:description',
           content: 'About this project'
         },
-        // {
-        //   property: 'og:image',
-        //   content: 'https://zorin.expert/assets/ogimage/menu/OG_Image_About.jpg'
-        // },
-        // {
-        //   property: 'og:url',
-        //   content: 'https://Zorin.Expert'
-        // },
+        {
+          property: 'og:image',
+          content: 'https://vue-start-template.vercel.app/assets/ogimage/Image_All.jpg'
+        },
+        {
+          property: 'og:url',
+          content: 'https://vue-start-template.vercel.app'
+        },
         {
           property: 'og:type',
           content: 'website'
@@ -141,14 +141,14 @@ const routes: Array<RouteRecordRaw> = [
           property: 'og:description',
           content: 'Page NOT Found'
         },
-        // {
-        //   property: 'og:image',
-        //   content: 'https://zorin.expert/assets/ogimage/menu/OG_Image_404.jpg'
-        // },
-        // {
-        //   property: 'og:url',
-        //   content: 'https://Zorin.Expert'
-        // },
+        {
+          property: 'og:image',
+          content: 'https://vue-start-template.vercel.app/assets/ogimage/Image_All.jpg'
+        },
+        {
+          property: 'og:url',
+          content: 'https://vue-start-template.vercel.app'
+        },
         {
           property: 'og:type',
           content: 'website'
