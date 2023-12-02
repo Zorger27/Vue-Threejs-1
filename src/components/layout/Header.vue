@@ -5,7 +5,7 @@ import languageSwitcher from "@/components/util/LanguageSwitcher.vue";
 @Options({
   data () {
     return {
-      getHeaderLogoImage: require('@/assets/img/header-logo.png')
+      getHeaderLogoImage: require('@/assets/img/header-logo.webp')
     }
   },
   methods: {
