@@ -109,7 +109,7 @@ header {
 
     @media (max-width: 768px) {
       display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 5fr;
       grid-template-rows: auto;
       grid-template-areas: "burger-menu language logo";
       grid-column-gap: 0.5rem;
