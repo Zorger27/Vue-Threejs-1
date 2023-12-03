@@ -58,7 +58,7 @@ module.exports = {
         devMode: 'webapp',
         outputPath: 'assets/favicon-img/', // Куда будут на сервере скидываться созданные favicon-ки
         prefix: 'assets/favicon-img/', // Этот префикс для файла index.html, чтобы правильно прописать пути иконок с сервера!
-        // manifest: './src/assets/manifest/manifest.webmanifest',
+        manifest: './src/assets/manifest/manifest.webmanifest',
         favicons: {
           appName: 'Template',
           appDescription: 'Vue.js Start template by Zorger',
