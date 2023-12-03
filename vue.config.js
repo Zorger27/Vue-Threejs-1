@@ -13,7 +13,8 @@ module.exports = {
     }
   },
   pwa: {
-    disableManifest: true,
+    manifestPath: href="/assets/favicon-img/manifest.webmanifest"
+    // disableManifest: true,
   },
   configureWebpack: {
     plugins: [
