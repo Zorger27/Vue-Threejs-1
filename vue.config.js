@@ -12,6 +12,9 @@ module.exports = {
       title: 'Template',
     }
   },
+  pwa: {
+    manifestPath: '/assets/favicon-img/manifest.webmanifest'
+  },
   configureWebpack: {
     plugins: [
       new CopyWebpackPlugin({ //СУПЕР-ВАЖНАЯ штука для ссылок на файлы (pdf или картинки), расположенные на самом сервере!!!
