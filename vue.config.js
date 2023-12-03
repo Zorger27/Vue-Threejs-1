@@ -13,7 +13,7 @@ module.exports = {
     }
   },
   pwa: {
-    // manifestPath: '/assets/favicon-img/manifest.webmanifest'
+    manifestPath: 'assets/favicon-img/manifest.webmanifest'
   },
   configureWebpack: {
     plugins: [
