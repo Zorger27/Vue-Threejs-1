@@ -13,7 +13,7 @@ module.exports = {
     }
   },
   pwa: {
-    manifestPath: href="/assets/favicon-img/manifest.webmanifest"
+    manifestPath: "https://vue-start-template.vercel.app/assets/favicon-img/manifest.webmanifest"
     // disableManifest: true,
   },
   configureWebpack: {
