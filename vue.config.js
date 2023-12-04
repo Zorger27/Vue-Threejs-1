@@ -13,11 +13,7 @@ module.exports = {
     }
   },
   pwa: {
-    // manifestPath: "https://vue-start-template.vercel.app/assets/favicon-img/manifest.webmanifest",
-    manifestPath: {
-      rel: 'manifest',
-      path: "https://vue-start-template.vercel.app/assets/favicon-img/manifest.webmanifest",
-    },
+    manifestPath: "https://vue-start-template.vercel.app/assets/favicon-img/manifest.webmanifest",
     iconPaths: {
       favicon32: null,
       favicon16: null,
