@@ -57,7 +57,7 @@ module.exports = {
         useHash: false,
         metas: [
           // {attributes: {name: 'google-site-verification', content: 'Gq9vrXtN91P1JteGFo-xrlLKT0PR8u-4P4xs21oUr8Y'}},
-          {attributes: {property: 'description', content: 'Vue.js Start template by Zorger'}},
+          {attributes: {name: 'description', content: 'Vue.js Start template by Zorger'}},
           {attributes: {property: 'og:title', content: 'Template'}},
           {attributes: {property: 'twitter:title', content: 'Template'}},
           {attributes: {property: 'og:description', content: 'Vue.js Start template by Zorger'}},
