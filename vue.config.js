@@ -28,8 +28,8 @@ module.exports = {
       new CopyWebpackPlugin({ //СУПЕР-ВАЖНАЯ штука для ссылок на файлы (pdf или картинки), расположенные на самом сервере!!!
         patterns: [
           {
-            from: 'src/assets',
-            to: 'assets'
+            from: "src/assets",
+            to: "assets"
           },
           {
             from: "src/assets/analytics/robots.txt",
