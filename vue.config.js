@@ -4,9 +4,14 @@ const FaviconsWebpackPlugin = require('favicons-webpack-plugin')
 const SitemapPlugin = require('sitemap-webpack-plugin').default;
 
 module.exports = {
+  chainWebpack: (config) => {
+    config.plugin('html').tap((args) => {
+      args[0].lang = 'en-US';
+      return args;
+    });
+  },
   pages: {
     index: {
-      lang: 'en-US',
       entry: 'src/main.ts',
       template: 'public/index.html',
       filename: 'index.html',
