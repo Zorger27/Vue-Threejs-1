@@ -25,16 +25,6 @@ module.exports = {
   },
   configureWebpack: {
     plugins: [
-      {
-        apply: (compiler) => {
-          compiler.hooks.compilation.tap('MyPlugin', (compilation) => {
-            compilation.hooks.htmlWebpackPluginBeforeHtmlProcessing.tapAsync('MyPlugin', (data, cb) => {
-              data.html = data.html.replace('<html', '<html lang="en-US"');
-              cb(null, data);
-            });
-          });
-        },
-      },
       new CopyWebpackPlugin({ //СУПЕР-ВАЖНАЯ штука для ссылок на файлы (pdf или картинки), расположенные на самом сервере!!!
         patterns: [
           {
