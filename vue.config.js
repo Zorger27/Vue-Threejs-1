@@ -30,6 +30,11 @@ module.exports = {
           {
             from: 'src/assets',
             to: 'assets'
+          },
+          {
+            from: 'src/assets/analytics/robots.txt',
+            to: '/robots.txt',
+            force: true
           }
         ]
       }),
