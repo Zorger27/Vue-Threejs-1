@@ -4,12 +4,6 @@ const FaviconsWebpackPlugin = require('favicons-webpack-plugin')
 const SitemapPlugin = require('sitemap-webpack-plugin').default;
 
 module.exports = {
-  chainWebpack: (config) => {
-    config.plugin('html').tap((args) => {
-      args[0].lang = 'en-US';
-      return args;
-    });
-  },
   pages: {
     index: {
       entry: 'src/main.ts',
@@ -31,6 +25,16 @@ module.exports = {
   },
   configureWebpack: {
     plugins: [
+      {
+        apply: (compiler) => {
+          compiler.hooks.compilation.tap('MyPlugin', (compilation) => {
+            compilation.hooks.htmlWebpackPluginBeforeHtmlProcessing.tapAsync('MyPlugin', (data, cb) => {
+              data.html = data.html.replace('<html', '<html lang="en-US"');
+              cb(null, data);
+            });
+          });
+        },
+      },
       new CopyWebpackPlugin({ //СУПЕР-ВАЖНАЯ штука для ссылок на файлы (pdf или картинки), расположенные на самом сервере!!!
         patterns: [
           {
