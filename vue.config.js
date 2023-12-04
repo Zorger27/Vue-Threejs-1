@@ -33,7 +33,7 @@ module.exports = {
           },
           {
             from: 'src/assets/analytics/robots.txt',
-            to: '/robots.txt',
+            to: '/',
             force: true
           }
         ]
