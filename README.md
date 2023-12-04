@@ -4,12 +4,12 @@
 ### You can view my Portfolio (SPA) here: [My Portfolio](https://Zorin.Expert)❗️ ###
 ### Technologies: [Vue.js v.3.3.9](https://v3.ru.vuejs.org), [Vuex](https://vuex.vuejs.org), HTML5, CSS3, FlexBox CSS, Grid CSS, JavaScript, TypeScript. ###
 ![Screen](https://github.com/Zorger27/Vue-Start-template/assets/30940416/7a20f594-12db-4de9-88fa-6bdf54ddff7e)
-
-#### This is the starter development template on Vue.js with internationalization, routers and store. 
-#### Prepared for connection to Google Analytics, Google Search Console and other APIs (Axios installed).
-#### The template is customized and optimized for PWA (Progressive Web App) technology.
-#### Main settings have to made in the **vue.config.js** file!
-#### Good luck! 🍀 
+<br>
+<span style="font-size: 18px;">This is the Starter Development Template on Vue.js with **internationalization**, **routers** and **store**.<br>
+Prepared for connection to **_Google Analytics_**, **_Google Search Console_** and other APIs (`Axios` installed).<br>
+The template is customized and optimized for **PWA** (`Progressive Web App`) technology.<br>
+Main settings have to made in the ``vue.config.js`` file!</span><br>
+<span style="font-size: 23px; color: darkred;">__Good luck! 🍀__</span>
 
 ## Project setup
 ```
