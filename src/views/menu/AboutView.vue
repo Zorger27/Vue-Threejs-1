@@ -65,7 +65,7 @@ export default class About extends Vue {}
 .about {
   flex: 1 0 auto;
   text-align: center;
-  background-image: url("@/assets/background/background03.webp");
+  background-image: url("@/assets/background/background01.webp");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -85,7 +85,7 @@ export default class About extends Vue {}
       background: inherit;
     }
     a:hover {
-      background-image: url("@/assets/background/background04.webp");
+      background-image: url("@/assets/background/background02.webp");
       background-position: center;
       background-size: cover;
       background-repeat: no-repeat;

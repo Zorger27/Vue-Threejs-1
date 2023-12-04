@@ -67,8 +67,8 @@ module.exports = {
         logo: './src/assets/img/favbig.png',
         mode: 'webapp',
         devMode: 'webapp',
-        outputPath: 'assets/favicon-img/', // Куда будут на сервере скидываться созданные favicon-ки
-        prefix: 'assets/favicon-img/', // Этот префикс для файла index.html, чтобы правильно прописать пути иконок с сервера!
+        outputPath: 'assets/favicon/', // Куда будут на сервере скидываться созданные favicon-ки
+        prefix: 'assets/favicon/', // Этот префикс для файла index.html, чтобы правильно прописать пути иконок с сервера!
         manifest: './src/assets/manifest/manifest.webmanifest',
         favicons: {
           appName: 'Template',
