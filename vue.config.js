@@ -13,6 +13,7 @@ module.exports = {
     }
   },
   pwa: {
+    lang: 'en-US',
     manifestPath: "https://vue-start-template.vercel.app/assets/favicon/manifest.webmanifest",
     iconPaths: {
       favicon32: null,
