@@ -6,6 +6,7 @@ const SitemapPlugin = require('sitemap-webpack-plugin').default;
 module.exports = {
   pages: {
     index: {
+      lang: 'en-US',
       entry: 'src/main.ts',
       template: 'public/index.html',
       filename: 'index.html',
@@ -13,7 +14,6 @@ module.exports = {
     }
   },
   pwa: {
-    lang: 'en-US',
     manifestPath: "https://vue-start-template.vercel.app/assets/favicon/manifest.webmanifest",
     iconPaths: {
       favicon32: null,
