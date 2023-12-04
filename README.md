@@ -9,7 +9,7 @@ This is the Starter Development Template on Vue.js with **internationalization**
 Prepared for connection to **_Google Analytics_**, **_Google Search Console_** and other APIs (`Axios` installed).<br>
 The template is customized and optimized for **PWA** (`Progressive Web App`) technology.<br>
 Main settings have to made in the ``vue.config.js`` file!</span><br>
-<span style="color: darkred;">__Good luck! 🍀🍀🍀__</span>
+__Good luck! 🍀🍀🍀__
 
 ## Project setup
 ```
