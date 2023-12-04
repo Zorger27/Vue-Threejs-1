@@ -5,10 +5,10 @@
 ### Technologies: [Vue.js v.3.3.9](https://v3.ru.vuejs.org), [Vuex](https://vuex.vuejs.org), HTML5, CSS3, FlexBox CSS, Grid CSS, JavaScript, TypeScript. ###
 ![Screen](https://github.com/Zorger27/Vue-Start-template/assets/30940416/7a20f594-12db-4de9-88fa-6bdf54ddff7e)
 <br>
-This is the Starter Development Template on Vue.js with **internationalization**, **routers** and **store**.<br>
-Prepared for connection to **_Google Analytics_**, **_Google Search Console_** and other APIs (`Axios` installed).<br>
-The template is customized and optimized for **PWA** (`Progressive Web App`) technology.<br>
-Main settings have to made in the ``vue.config.js`` file!</span><br>
++ This is the Starter Development Template on Vue.js with **internationalization**, **routers** and **store**.<br>
++ Prepared for connection to **_Google Analytics_**, **_Google Search Console_** and other APIs (`Axios` installed).<br>
++ The template is customized and optimized for **PWA** (`Progressive Web App`) technology.<br>
++ Main settings have to made in the ``vue.config.js`` file!<br>
 __Good luck! 🍀🍀🍀__
 
 ### Project setup (install dependencies)
