@@ -32,8 +32,9 @@ module.exports = {
             to: 'assets'
           },
           {
-            from: 'src/assets/analytics/robots.txt',
-            to: '/',
+            from: "src/assets/analytics/robots.txt",
+            to: "",
+            toType: "dir",
             force: true
           }
         ]
