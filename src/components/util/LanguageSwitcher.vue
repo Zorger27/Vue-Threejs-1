@@ -15,6 +15,7 @@ export default {
   name: "LanguageSwitcher",
   setup() {
     const {t, locale, availableLocales} = useI18n()
+    document.documentElement.lang = 'en'
     const savelocale = (sLocale: string) => {
       localStorage.setItem("user-locale", sLocale);
     }
@@ -22,9 +23,8 @@ export default {
     // при инициализации компонента попробуем загрузить значение из localStorage
     const savedLocale = localStorage.getItem("user-locale")
     if (savedLocale && availableLocales.includes(savedLocale)) {
-      locale.value = savedLocale
+      locale.value = document.documentElement.lang = savedLocale
     }
-    document.documentElement.lang = 'en'
     // Следим за изменением значения locale и обновляем атрибут lang
     watch(locale, (newLocale) => {
       document.documentElement.lang = newLocale;
