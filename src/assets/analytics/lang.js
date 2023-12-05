@@ -1,1 +1,1 @@
-document.documentElement.lang = 'en-US';
+document.documentElement.lang = 'en';
