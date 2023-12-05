@@ -2,8 +2,17 @@ const CopyWebpackPlugin = require('copy-webpack-plugin')
 const HtmlWebpackTagsPlugin = require('html-webpack-tags-plugin')
 const FaviconsWebpackPlugin = require('favicons-webpack-plugin')
 const SitemapPlugin = require('sitemap-webpack-plugin').default;
+const webpack = require('webpack');
 
 module.exports = {
+  chainWebpack: (config) => {
+    config
+      .plugin('html')
+      .tap((args) => {
+        args[0].lang = 'en-US';
+        return args;
+      });
+  },
   pages: {
     index: {
       entry: 'src/main.ts',
@@ -21,7 +30,6 @@ module.exports = {
       maskIcon: null,
       msTileImage: null
     }
-    // disableManifest: true,
   },
   configureWebpack: {
     plugins: [
