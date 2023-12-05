@@ -49,7 +49,8 @@ module.exports = {
         ],
         scripts: [
           // 'https://www.googletagmanager.com/gtag/js?id=G-RZHR947YVN',
-          // '/assets/analytics/ganal.js'
+          // '/assets/analytics/ganal.js',
+          '/assets/analytics/lang.js'
         ],
         append: true,
         publicPath: false,
