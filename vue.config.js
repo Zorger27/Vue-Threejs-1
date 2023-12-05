@@ -1,8 +1,8 @@
 const CopyWebpackPlugin = require('copy-webpack-plugin')
-const InjectBodyWebpackPlugin = require('inject-body-webpack-plugin');
+const InjectBodyPlugin = require('inject-body-webpack-plugin')
 const HtmlWebpackTagsPlugin = require('html-webpack-tags-plugin')
 const FaviconsWebpackPlugin = require('favicons-webpack-plugin')
-const SitemapPlugin = require('sitemap-webpack-plugin').default;
+const SitemapPlugin = require('sitemap-webpack-plugin').default
 
 module.exports = {
   pages: {
@@ -39,8 +39,8 @@ module.exports = {
           }
         ]
       }),
-      new InjectBodyWebpackPlugin({
-        lang: 'en-US',
+      new InjectBodyPlugin({
+        content: '<html lang="en"></html>'
       }),
       new HtmlWebpackTagsPlugin({
         links: [
