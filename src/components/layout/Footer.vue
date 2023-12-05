@@ -56,6 +56,7 @@ footer {
   img {
     max-width: 100%;
     width: 4rem;
+    height: 4rem;
     max-height:100%;
     cursor: pointer;
     padding-right: 0.2rem;

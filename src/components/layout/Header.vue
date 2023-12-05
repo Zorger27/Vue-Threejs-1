@@ -83,6 +83,7 @@ header {
       justify-self: left;
       img {
         width: 4rem;
+        height: 4rem;
         cursor: pointer;
       }
     }
