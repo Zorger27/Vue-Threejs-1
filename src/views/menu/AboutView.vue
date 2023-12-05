@@ -3,21 +3,9 @@ import {Options, Vue} from "vue-class-component";
 import infoStore from "@/store/modules/service/infoStore";
 
 @Options({
-  computed: {
-    infoStore() {
-      return infoStore
-    }
-  },
-  data() {
-    return {
-      tableView: false,
-    }
-  },
-  methods: {
-    changeView() {
-      this.tableView = !this.tableView;
-    }
-  },
+  computed: {infoStore() {return infoStore}},
+  data() {return {tableView: false,}},
+  methods: {changeView() {this.tableView = !this.tableView;}},
   components: {},
 })
 
