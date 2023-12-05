@@ -1,4 +1,5 @@
 const CopyWebpackPlugin = require('copy-webpack-plugin')
+const InjectBodyWebpackPlugin = require('inject-body-webpack-plugin');
 const HtmlWebpackTagsPlugin = require('html-webpack-tags-plugin')
 const FaviconsWebpackPlugin = require('favicons-webpack-plugin')
 const SitemapPlugin = require('sitemap-webpack-plugin').default;
@@ -37,6 +38,9 @@ module.exports = {
             force: true
           }
         ]
+      }),
+      new InjectBodyWebpackPlugin({
+        lang: 'en-US',
       }),
       new HtmlWebpackTagsPlugin({
         links: [
