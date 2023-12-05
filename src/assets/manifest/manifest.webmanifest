@@ -1,6 +1,6 @@
 {
-  "name": "vue-start-template",
-  "short_name": "template",
+  "name": "Template",
+  "short_name": "Template",
   "theme_color": "#4DBA87",
   "start_url": "/",
   "display": "standalone",
