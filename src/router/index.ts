@@ -11,7 +11,7 @@ const routes: Array<RouteRecordRaw> = [
     name: 'project1',
     component: Project1,
     meta: {
-      title: 'Project № 1',
+      title: 'Projects - Project № 1',
       metaTags: [
         {
           property: 'og:title',
@@ -41,7 +41,7 @@ const routes: Array<RouteRecordRaw> = [
     name: 'project2',
     component: Project2,
     meta: {
-      title: 'Project № 2',
+      title: 'Projects - Project № 2',
       metaTags: [
         {
           property: 'og:title',
@@ -71,7 +71,7 @@ const routes: Array<RouteRecordRaw> = [
     name: 'project3',
     component: Project3,
     meta: {
-      title: 'Project № 3',
+      title: 'Projects - Project № 3',
       metaTags: [
         {
           property: 'og:title',
@@ -101,7 +101,7 @@ const routes: Array<RouteRecordRaw> = [
     name: 'about',
     component: About,
     meta: {
-      title: 'About this project',
+      title: 'About this Project',
       metaTags: [
         {
           property: 'og:title',
