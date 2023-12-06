@@ -39,14 +39,14 @@ module.exports = {
         ]
       }),
       new HtmlWebpackTagsPlugin({
-        links: [
-          {
+        // links: [
+        //   {
             // path: 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css',
             // attributes: {
             //   rel: 'stylesheet'
             // },
-          },
-        ],
+        //   },
+        // ],
         scripts: [
           // 'https://www.googletagmanager.com/gtag/js?id=G-RZHR947YVN',
           // '/assets/analytics/ganal.js'
