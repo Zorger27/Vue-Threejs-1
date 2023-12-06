@@ -41,10 +41,10 @@ module.exports = {
       new HtmlWebpackTagsPlugin({
         links: [
           {
-            path: 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css',
-            attributes: {
-              rel: 'stylesheet'
-            },
+            // path: 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css',
+            // attributes: {
+            //   rel: 'stylesheet'
+            // },
           },
         ],
         scripts: [
