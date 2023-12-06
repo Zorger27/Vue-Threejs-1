@@ -12,7 +12,7 @@ import {useRoute} from 'vue-router';
 import Header from "@/components/layout/Header.vue";
 import Footer from "@/components/layout/Footer.vue";
 import "@/assets/style/global.scss";
-import "@/assets/style/fontawesome-free-6.5.1-all.min.css";
+import "@/assets/style/fontawesome-free-6.5.1/css/all.min.css";
 @Options({
   components: {Header, Footer},
 })
