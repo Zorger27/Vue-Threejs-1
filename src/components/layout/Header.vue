@@ -25,6 +25,21 @@ export default class Header extends Vue {
   hideMenu() {
     this.showMenu = false;
   }
+
+  clickOutsideHandler(event: MouseEvent) {
+    if (this.showMenu && !(event.target as HTMLElement).closest(".burger-menu")) {
+      this.showMenu = false;
+    }
+  }
+
+  mounted() {
+    document.addEventListener("click", this.clickOutsideHandler);
+  }
+
+  beforeUnmount() {
+    document.removeEventListener("click", this.clickOutsideHandler);
+  }
+
 }
 </script>
 
