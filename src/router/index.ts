@@ -23,7 +23,7 @@ const routes: Array<RouteRecordRaw> = [
         },
         {
           property: 'og:image',
-          content: 'https://vue-start-template.vercel.app/assets/ogimage/Image_All.webp'
+          content: 'https://vue-start-template.vercel.app/assets/ogimage/image_all.webp'
         },
         {
           property: 'og:url',
@@ -53,7 +53,7 @@ const routes: Array<RouteRecordRaw> = [
         },
         {
           property: 'og:image',
-          content: 'https://vue-start-template.vercel.app/assets/ogimage/Image_All.webp'
+          content: 'https://vue-start-template.vercel.app/assets/ogimage/image_all.webp'
         },
         {
           property: 'og:url',
@@ -83,7 +83,7 @@ const routes: Array<RouteRecordRaw> = [
         },
         {
           property: 'og:image',
-          content: 'https://vue-start-template.vercel.app/assets/ogimage/Image_All.webp'
+          content: 'https://vue-start-template.vercel.app/assets/ogimage/image_all.webp'
         },
         {
           property: 'og:url',
@@ -113,7 +113,7 @@ const routes: Array<RouteRecordRaw> = [
         },
         {
           property: 'og:image',
-          content: 'https://vue-start-template.vercel.app/assets/ogimage/Image_All.webp'
+          content: 'https://vue-start-template.vercel.app/assets/ogimage/image_all.webp'
         },
         {
           property: 'og:url',
@@ -143,7 +143,7 @@ const routes: Array<RouteRecordRaw> = [
         },
         {
           property: 'og:image',
-          content: 'https://vue-start-template.vercel.app/assets/ogimage/Image_All.webp'
+          content: 'https://vue-start-template.vercel.app/assets/ogimage/image_all.webp'
         },
         {
           property: 'og:url',
