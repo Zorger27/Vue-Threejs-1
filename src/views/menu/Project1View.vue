@@ -13,11 +13,12 @@ export default {
       scene = new THREE.Scene();
 
       // Создаем камеру
-      camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+      camera = new THREE.PerspectiveCamera(65, window.innerWidth / window.innerHeight, 0.1, 1000);
       camera.position.z = 5;
 
       // Создаем рендерер
-      renderer = new THREE.WebGLRenderer();
+      // renderer = new THREE.WebGLRenderer();
+      renderer = new THREE.WebGLRenderer({ alpha: true });
       renderer.setSize(window.innerWidth, window.innerHeight);
 
       // Создаем геометрию и материал для куба
@@ -50,9 +51,17 @@ export default {
 
       animate();
     };
+    const onWindowResize = () => {
+      camera.aspect = window.innerWidth / window.innerHeight;
+      camera.updateProjectionMatrix();
+      renderer.setSize(window.innerWidth, window.innerHeight);
+    };
+
+    window.addEventListener('resize', onWindowResize);
 
     onMounted(() => {
       init();
+      onWindowResize();
     });
 
     onUnmounted(() => {
@@ -71,7 +80,7 @@ export default {
 <template>
   <div class="container">
     <h1>{{ $t('project1.name') }}</h1>
-<!--    <line></line>-->
+    <line></line>
     <div ref="canvasContainer"></div>
   </div>
 </template>
