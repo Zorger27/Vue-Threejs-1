@@ -14,7 +14,7 @@ export default {
 
       // Создаем камеру
       camera = new THREE.PerspectiveCamera(65, window.innerWidth / window.innerHeight, 0.1, 1000);
-      camera.position.z = 5;
+      camera.position.z = 2;
 
       // Создаем рендерер
       // renderer = new THREE.WebGLRenderer();
@@ -33,11 +33,19 @@ export default {
       ];
       cube = new THREE.Mesh(geometry, materials);
 
+
       // Добавляем куб на сцену
       scene.add(cube);
 
       // Добавляем рендерер в контейнер
       canvasContainer.value.appendChild(renderer.domElement);
+
+      // Если нужно уменьшить размеры
+      // const newWidth = 500; // новая ширина
+      // const newHeight = 300; // новая высота
+
+      // Устанавливаем новые размеры
+      // renderer.setSize(newWidth, newHeight);
 
       // Обновляем сцену
       const animate = () => {
@@ -52,9 +60,14 @@ export default {
       animate();
     };
     const onWindowResize = () => {
-      camera.aspect = window.innerWidth / window.innerHeight;
+      // const newWidth = 500; // новая ширина
+      const newHeight = 400; // новая высота
+      // camera.aspect = window.innerWidth / window.innerHeight;
+      camera.aspect = window.innerWidth / newHeight;
       camera.updateProjectionMatrix();
-      renderer.setSize(window.innerWidth, window.innerHeight);
+      // renderer.setSize(window.innerWidth, window.innerHeight);
+      renderer.setSize(window.innerWidth, newHeight);
+
     };
 
     window.addEventListener('resize', onWindowResize);
@@ -81,21 +94,23 @@ export default {
   <div class="container">
     <h1>{{ $t('project1.name') }}</h1>
     <line></line>
-    <div ref="canvasContainer"></div>
+    <div class="scene-container" ref="canvasContainer"></div>
   </div>
 </template>
 
 <style lang="scss" scoped>
 .container {
+  //display: flex;
   flex: 1 0 auto;
+  //flex-direction: column;
+  //justify-content: flex-start;
+  //height: 100vh;
   background: linear-gradient(to bottom, rgb(255, 249, 229), rgb(255, 240, 244)) no-repeat center;
-
-  //background-image: url("@/assets/background/background02.jpg");
-  //background-position: center;
-  //background-size: cover;
-  //background-repeat: no-repeat;
-
   h1 {font-size: 2.5rem;margin: 0.7rem auto;color: black;}
+  .scene-container {
+    //width: 100%;
+    height: 100%;
+  }
 }
 @media(max-width: 1020px) {
   .container {
