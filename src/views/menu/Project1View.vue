@@ -33,7 +33,6 @@ export default {
       ];
       cube = new THREE.Mesh(geometry, materials);
 
-
       // Добавляем куб на сцену
       scene.add(cube);
 
@@ -93,15 +92,10 @@ export default {
 
 <style lang="scss" scoped>
 .container {
-  //display: flex;
   flex: 1 0 auto;
-  //flex-direction: column;
-  //justify-content: flex-start;
-  //height: 100vh;
   background: linear-gradient(to bottom, rgb(255, 249, 229), rgb(255, 240, 244)) no-repeat center;
   h1 {font-size: 2.5rem;margin: 0.7rem auto;color: black;}
   .scene-container {
-    //width: 100%;
     height: 100%;
   }
 }
