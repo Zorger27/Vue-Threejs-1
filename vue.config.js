@@ -82,7 +82,7 @@ module.exports = {
           developerURL: null
         }
       }),
-      new SitemapPlugin({
+      // new SitemapPlugin({
         // base: 'https://vue-start-template.vercel.app', // Базовый URL моего сайта
         // paths: [
         //   { path: '/', priority: 1, changefreq: 'always' },
@@ -93,7 +93,7 @@ module.exports = {
         // options: {
         //   skipgzip: true
         // },
-      }),
+      // }),
     ]
   }
 }
