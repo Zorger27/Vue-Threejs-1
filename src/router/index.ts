@@ -11,7 +11,7 @@ const routes: Array<RouteRecordRaw> = [
     name: 'project1',
     component: Project1,
     meta: {
-      title: 'Projects - Project № 1',
+      title: 'Three.js projects - Project № 1',
       metaTags: [
         {
           property: 'og:title',
@@ -21,14 +21,14 @@ const routes: Array<RouteRecordRaw> = [
           property: 'og:description',
           content: 'Project № 1'
         },
-        {
-          property: 'og:image',
-          content: 'https://vue-start-template.vercel.app/assets/ogimage/image_all.jpg'
-        },
-        {
-          property: 'og:url',
-          content: 'https://vue-start-template.vercel.app'
-        },
+        // {
+        //   property: 'og:image',
+        //   content: 'https://vue-start-template.vercel.app/assets/ogimage/image_all.jpg'
+        // },
+        // {
+        //   property: 'og:url',
+        //   content: 'https://vue-start-template.vercel.app'
+        // },
         {
           property: 'og:type',
           content: 'website'
@@ -41,7 +41,7 @@ const routes: Array<RouteRecordRaw> = [
     name: 'project2',
     component: Project2,
     meta: {
-      title: 'Projects - Project № 2',
+      title: 'Three.js projects - Project № 2',
       metaTags: [
         {
           property: 'og:title',
@@ -51,14 +51,14 @@ const routes: Array<RouteRecordRaw> = [
           property: 'og:description',
           content: 'Project № 2'
         },
-        {
-          property: 'og:image',
-          content: 'https://vue-start-template.vercel.app/assets/ogimage/image_all.jpg'
-        },
-        {
-          property: 'og:url',
-          content: 'https://vue-start-template.vercel.app'
-        },
+        // {
+        //   property: 'og:image',
+        //   content: 'https://vue-start-template.vercel.app/assets/ogimage/image_all.jpg'
+        // },
+        // {
+        //   property: 'og:url',
+        //   content: 'https://vue-start-template.vercel.app'
+        // },
         {
           property: 'og:type',
           content: 'website'
@@ -71,7 +71,7 @@ const routes: Array<RouteRecordRaw> = [
     name: 'project3',
     component: Project3,
     meta: {
-      title: 'Projects - Project № 3',
+      title: 'Three.js projects - Project № 3',
       metaTags: [
         {
           property: 'og:title',
@@ -81,14 +81,14 @@ const routes: Array<RouteRecordRaw> = [
           property: 'og:description',
           content: 'Project № 3'
         },
-        {
-          property: 'og:image',
-          content: 'https://vue-start-template.vercel.app/assets/ogimage/image_all.jpg'
-        },
-        {
-          property: 'og:url',
-          content: 'https://vue-start-template.vercel.app'
-        },
+        // {
+        //   property: 'og:image',
+        //   content: 'https://vue-start-template.vercel.app/assets/ogimage/image_all.jpg'
+        // },
+        // {
+        //   property: 'og:url',
+        //   content: 'https://vue-start-template.vercel.app'
+        // },
         {
           property: 'og:type',
           content: 'website'
@@ -111,14 +111,14 @@ const routes: Array<RouteRecordRaw> = [
           property: 'og:description',
           content: 'About this project'
         },
-        {
-          property: 'og:image',
-          content: 'https://vue-start-template.vercel.app/assets/ogimage/image_all.jpg'
-        },
-        {
-          property: 'og:url',
-          content: 'https://vue-start-template.vercel.app'
-        },
+        // {
+        //   property: 'og:image',
+        //   content: 'https://vue-start-template.vercel.app/assets/ogimage/image_all.jpg'
+        // },
+        // {
+        //   property: 'og:url',
+        //   content: 'https://vue-start-template.vercel.app'
+        // },
         {
           property: 'og:type',
           content: 'website'
@@ -141,14 +141,14 @@ const routes: Array<RouteRecordRaw> = [
           property: 'og:description',
           content: 'Page NOT Found'
         },
-        {
-          property: 'og:image',
-          content: 'https://vue-start-template.vercel.app/assets/ogimage/image_all.jpg'
-        },
-        {
-          property: 'og:url',
-          content: 'https://vue-start-template.vercel.app'
-        },
+        // {
+        //   property: 'og:image',
+        //   content: 'https://vue-start-template.vercel.app/assets/ogimage/image_all.jpg'
+        // },
+        // {
+        //   property: 'og:url',
+        //   content: 'https://vue-start-template.vercel.app'
+        // },
         {
           property: 'og:type',
           content: 'website'

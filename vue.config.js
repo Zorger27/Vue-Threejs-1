@@ -9,11 +9,11 @@ module.exports = {
       entry: 'src/main.ts',
       template: 'public/index.html',
       filename: 'index.html',
-      title: 'Template',
+      title: 'Vue.js & Three.js projects',
     }
   },
   pwa: {
-    manifestPath: "https://vue-start-template.vercel.app/assets/favicon/manifest.webmanifest",
+    // manifestPath: "https://vue-start-template.vercel.app/assets/favicon/manifest.webmanifest",
     iconPaths: {
       favicon32: null,
       favicon16: null,
@@ -56,14 +56,14 @@ module.exports = {
         useHash: false,
         metas: [
           // {attributes: {name: 'google-site-verification', content: 'Gq9vrXtN91P1JteGFo-xrlLKT0PR8u-4P4xs21oUr8Y'}},
-          {attributes: {name: 'description', content: 'Vue.js Start template by Zorger'}},
-          {attributes: {property: 'og:title', content: 'Template'}},
-          {attributes: {property: 'twitter:title', content: 'Template'}},
-          {attributes: {property: 'og:description', content: 'Vue.js Start template by Zorger'}},
-          {attributes: {property: 'twitter:description', content: 'Vue.js Start template by Zorger'}},
-          {attributes: {property: 'og:image', content: 'https://vue-start-template.vercel.app/assets/ogimage/image_all.jpg'}},
-          {attributes: {property: 'twitter:image', content: 'https://vue-start-template.vercel.app/assets/ogimage/image_all.jpg'}},
-          {attributes: {property: 'og:url', content: 'https://vue-start-template.vercel.app'}},
+          {attributes: {name: 'description', content: 'Vue.js & Three.js projects'}},
+          {attributes: {property: 'og:title', content: 'Three.js projects'}},
+          {attributes: {property: 'twitter:title', content: 'Three.js projects'}},
+          {attributes: {property: 'og:description', content: 'Vue.js & Three.js projects'}},
+          {attributes: {property: 'twitter:description', content: 'Vue.js & Three.js projects'}},
+          // {attributes: {property: 'og:image', content: 'https://vue-start-template.vercel.app/assets/ogimage/image_all.jpg'}},
+          // {attributes: {property: 'twitter:image', content: 'https://vue-start-template.vercel.app/assets/ogimage/image_all.jpg'}},
+          // {attributes: {property: 'og:url', content: 'https://vue-start-template.vercel.app'}},
           {attributes: {property: 'og:type', content: 'website'}},
           {attributes: {property: 'twitter:card', content: 'summary_large_image'}}
         ]
@@ -76,23 +76,23 @@ module.exports = {
         prefix: 'assets/favicon/', // Этот префикс для файла index.html, чтобы правильно прописать пути иконок с сервера!
         manifest: './src/assets/manifest/manifest.webmanifest',
         favicons: {
-          appName: 'Template',
-          appDescription: 'Vue.js Start template by Zorger',
+          appName: 'Three.js projects',
+          appDescription: 'Vue.js & Three.js projects',
           developerName: 'Zorger',
           developerURL: null
         }
       }),
       new SitemapPlugin({
-        base: 'https://vue-start-template.vercel.app', // Базовый URL моего сайта
-        paths: [
-          { path: '/', priority: 1, changefreq: 'always' },
-          { path: '/project2', priority: 1, changefreq: 'daily' },
-          { path: '/project3', priority: 1, changefreq: 'daily' },
-          { path: '/about', priority: 1, changefreq: 'always' },
-        ],
-        options: {
-          skipgzip: true
-        },
+        // base: 'https://vue-start-template.vercel.app', // Базовый URL моего сайта
+        // paths: [
+        //   { path: '/', priority: 1, changefreq: 'always' },
+        //   { path: '/project2', priority: 1, changefreq: 'daily' },
+        //   { path: '/project3', priority: 1, changefreq: 'daily' },
+        //   { path: '/about', priority: 1, changefreq: 'always' },
+        // ],
+        // options: {
+        //   skipgzip: true
+        // },
       }),
     ]
   }
