@@ -5,9 +5,7 @@
     "es": "Spanish"
   },
   "header": {
-    "prg01": "Project-1",
-    "prg02": "Project-2",
-    "prg03": "Project-3",
+    "prg01": "Project",
     "about": "About"
   },
   "footer": {
@@ -17,15 +15,7 @@
     "text4": "All rights reserved"
   },
   "project1": {
-    "name": "Project № 1",
-    "disc": "Description"
-  },
-  "project2": {
-    "name": "Project № 2",
-    "disc": "Description"
-  },
-  "project3": {
-    "name": "Project № 3",
+    "name": "Project",
     "disc": "Description"
   },
   "about": {

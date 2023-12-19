@@ -1,7 +1,5 @@
 import {createRouter, createWebHistory, RouteRecordNormalized, RouteRecordRaw} from 'vue-router'
 import ThreeScene01 from "@/views/menu/Project1View.vue";
-import Project2 from "@/views/menu/Project2View.vue";
-import Project3 from "@/views/menu/Project3View.vue";
 import About from "@/views/menu/AboutView.vue";
 import PageNotFound from "@/views/service/PageNotFound.vue";
 
@@ -11,75 +9,15 @@ const routes: Array<RouteRecordRaw> = [
     name: 'project1',
     component: ThreeScene01,
     meta: {
-      title: 'Three.js - Project № 1',
+      title: 'Three.js - Project',
       metaTags: [
         {
           property: 'og:title',
-          content: 'Project № 1'
+          content: 'Project'
         },
         {
           property: 'og:description',
-          content: 'Project № 1'
-        },
-        // {
-        //   property: 'og:image',
-        //   content: 'https://vue-start-template.vercel.app/assets/ogimage/image_all.jpg'
-        // },
-        // {
-        //   property: 'og:url',
-        //   content: 'https://vue-start-template.vercel.app'
-        // },
-        {
-          property: 'og:type',
-          content: 'website'
-        },
-      ]
-    }
-  },
-  {
-    path: '/project2',
-    name: 'project2',
-    component: Project2,
-    meta: {
-      title: 'Three.js - Project № 2',
-      metaTags: [
-        {
-          property: 'og:title',
-          content: 'Project № 2'
-        },
-        {
-          property: 'og:description',
-          content: 'Project № 2'
-        },
-        // {
-        //   property: 'og:image',
-        //   content: 'https://vue-start-template.vercel.app/assets/ogimage/image_all.jpg'
-        // },
-        // {
-        //   property: 'og:url',
-        //   content: 'https://vue-start-template.vercel.app'
-        // },
-        {
-          property: 'og:type',
-          content: 'website'
-        },
-      ]
-    }
-  },
-  {
-    path: '/project3',
-    name: 'project3',
-    component: Project3,
-    meta: {
-      title: 'Three.js - Project № 3',
-      metaTags: [
-        {
-          property: 'og:title',
-          content: 'Project № 3'
-        },
-        {
-          property: 'og:description',
-          content: 'Project № 3'
+          content: 'Project'
         },
         // {
         //   property: 'og:image',

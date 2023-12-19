@@ -9,7 +9,7 @@ module.exports = {
       entry: 'src/main.ts',
       template: 'public/index.html',
       filename: 'index.html',
-      title: 'Vue.js & Three.js projects',
+      title: 'Vue.js & Three.js project',
     }
   },
   pwa: {
@@ -56,11 +56,11 @@ module.exports = {
         useHash: false,
         metas: [
           // {attributes: {name: 'google-site-verification', content: 'Gq9vrXtN91P1JteGFo-xrlLKT0PR8u-4P4xs21oUr8Y'}},
-          {attributes: {name: 'description', content: 'Vue.js & Three.js projects'}},
-          {attributes: {property: 'og:title', content: 'Three.js projects'}},
-          {attributes: {property: 'twitter:title', content: 'Three.js projects'}},
-          {attributes: {property: 'og:description', content: 'Vue.js & Three.js projects'}},
-          {attributes: {property: 'twitter:description', content: 'Vue.js & Three.js projects'}},
+          {attributes: {name: 'description', content: 'Vue.js & Three.js project № 1 with TypeScript'}},
+          {attributes: {property: 'og:title', content: 'Three.js project'}},
+          {attributes: {property: 'twitter:title', content: 'Three.js project'}},
+          {attributes: {property: 'og:description', content: 'Vue.js & Three.js project № 1 with TypeScript'}},
+          {attributes: {property: 'twitter:description', content: 'Vue.js & Three.js project № 1 with TypeScript'}},
           // {attributes: {property: 'og:image', content: 'https://vue-start-template.vercel.app/assets/ogimage/image_all.jpg'}},
           // {attributes: {property: 'twitter:image', content: 'https://vue-start-template.vercel.app/assets/ogimage/image_all.jpg'}},
           // {attributes: {property: 'og:url', content: 'https://vue-start-template.vercel.app'}},
@@ -76,8 +76,8 @@ module.exports = {
         prefix: 'assets/favicon/', // Этот префикс для файла index.html, чтобы правильно прописать пути иконок с сервера!
         manifest: './src/assets/manifest/manifest.webmanifest',
         favicons: {
-          appName: 'Three.js projects',
-          appDescription: 'Vue.js & Three.js projects',
+          appName: 'Three.js project',
+          appDescription: 'Vue.js & Three.js project № 1 with TypeScript',
           developerName: 'Zorger',
           developerURL: null
         }
