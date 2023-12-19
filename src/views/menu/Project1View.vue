@@ -14,7 +14,7 @@ export default {
 
       // Создаем камеру
       camera = new THREE.PerspectiveCamera(65, window.innerWidth / window.innerHeight, 0.1, 1000);
-      camera.position.z = 2;
+      camera.position.z = 2.3;
 
       // Создаем рендерер
       // renderer = new THREE.WebGLRenderer();
@@ -24,12 +24,12 @@ export default {
       // Создаем геометрию и материал для куба
       const geometry = new THREE.BoxGeometry();
       const materials = [
-        new THREE.MeshBasicMaterial({ color: 0xff0000 }),
-        new THREE.MeshBasicMaterial({ color: 0x00ff00 }),
-        new THREE.MeshBasicMaterial({ color: 0x0000ff }),
-        new THREE.MeshBasicMaterial({ color: 0xffff00 }),
-        new THREE.MeshBasicMaterial({ color: 0xff00ff }),
-        new THREE.MeshBasicMaterial({ color: 0x00ffff }),
+        new THREE.MeshBasicMaterial({ color: 0xff0000, transparent: true, opacity: 0.5 }),
+        new THREE.MeshBasicMaterial({ color: 0x00ff00, transparent: true, opacity: 0.5 }),
+        new THREE.MeshBasicMaterial({ color: 0x0000ff, transparent: true, opacity: 0.5 }),
+        new THREE.MeshBasicMaterial({ color: 0xffff00, transparent: true, opacity: 0.5 }),
+        new THREE.MeshBasicMaterial({ color: 0xff00ff, transparent: true, opacity: 0.5 }),
+        new THREE.MeshBasicMaterial({ color: 0x00ffff, transparent: true, opacity: 0.5 }),
       ];
       cube = new THREE.Mesh(geometry, materials);
 
@@ -39,13 +39,6 @@ export default {
 
       // Добавляем рендерер в контейнер
       canvasContainer.value.appendChild(renderer.domElement);
-
-      // Если нужно уменьшить размеры
-      // const newWidth = 500; // новая ширина
-      // const newHeight = 300; // новая высота
-
-      // Устанавливаем новые размеры
-      // renderer.setSize(newWidth, newHeight);
 
       // Обновляем сцену
       const animate = () => {
