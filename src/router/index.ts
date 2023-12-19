@@ -1,5 +1,5 @@
 import {createRouter, createWebHistory, RouteRecordNormalized, RouteRecordRaw} from 'vue-router'
-import Project1 from "@/views/menu/Project1View.vue";
+import ThreeScene01 from "@/views/menu/Project1View.vue";
 import Project2 from "@/views/menu/Project2View.vue";
 import Project3 from "@/views/menu/Project3View.vue";
 import About from "@/views/menu/AboutView.vue";
@@ -9,7 +9,7 @@ const routes: Array<RouteRecordRaw> = [
   {
     path: '/',
     name: 'project1',
-    component: Project1,
+    component: ThreeScene01,
     meta: {
       title: 'Three.js - Project № 1',
       metaTags: [

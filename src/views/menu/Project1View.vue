@@ -3,7 +3,7 @@ import { ref, onMounted, onUnmounted } from 'vue';
 import * as THREE from 'three';
 
 export default {
-  name: 'ThreeScene',
+  name: 'ThreeScene01',
   setup() {
     const canvasContainer = ref(null);
     let scene, camera, renderer, cube;
@@ -69,11 +69,11 @@ export default {
 </script>
 
 <template>
-<!--  <div class="container">-->
-<!--    <h1>{{ $t('project1.name') }}</h1>-->
+  <div class="container">
+    <h1>{{ $t('project1.name') }}</h1>
 <!--    <line></line>-->
     <div ref="canvasContainer"></div>
-<!--  </div>-->
+  </div>
 </template>
 
 <style lang="scss" scoped>
