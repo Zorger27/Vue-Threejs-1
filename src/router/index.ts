@@ -19,14 +19,14 @@ const routes: Array<RouteRecordRaw> = [
           property: 'og:description',
           content: 'Project'
         },
-        // {
-        //   property: 'og:image',
-        //   content: 'https://vue-start-template.vercel.app/assets/ogimage/image_all.jpg'
-        // },
-        // {
-        //   property: 'og:url',
-        //   content: 'https://vue-start-template.vercel.app'
-        // },
+        {
+          property: 'og:image',
+          content: 'https://vue-threejs-1.vercel.app/assets/ogimage/image_all.jpg'
+        },
+        {
+          property: 'og:url',
+          content: 'https://vue-threejs-1.vercel.app'
+        },
         {
           property: 'og:type',
           content: 'website'
@@ -49,14 +49,14 @@ const routes: Array<RouteRecordRaw> = [
           property: 'og:description',
           content: 'About this project'
         },
-        // {
-        //   property: 'og:image',
-        //   content: 'https://vue-start-template.vercel.app/assets/ogimage/image_all.jpg'
-        // },
-        // {
-        //   property: 'og:url',
-        //   content: 'https://vue-start-template.vercel.app'
-        // },
+        {
+          property: 'og:image',
+          content: 'https://vue-threejs-1.vercel.app/assets/ogimage/image_all.jpg'
+        },
+        {
+          property: 'og:url',
+          content: 'https://vue-threejs-1.vercel.app'
+        },
         {
           property: 'og:type',
           content: 'website'
@@ -79,14 +79,14 @@ const routes: Array<RouteRecordRaw> = [
           property: 'og:description',
           content: 'Page NOT Found'
         },
-        // {
-        //   property: 'og:image',
-        //   content: 'https://vue-start-template.vercel.app/assets/ogimage/image_all.jpg'
-        // },
-        // {
-        //   property: 'og:url',
-        //   content: 'https://vue-start-template.vercel.app'
-        // },
+        {
+          property: 'og:image',
+          content: 'https://vue-threejs-1.vercel.app/assets/ogimage/image_all.jpg'
+        },
+        {
+          property: 'og:url',
+          content: 'https://vue-threejs-1.vercel.app'
+        },
         {
           property: 'og:type',
           content: 'website'

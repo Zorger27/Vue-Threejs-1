@@ -1,6 +1,6 @@
 {
-  "name": "Template",
-  "short_name": "Template",
+  "name": "Rotating 3D cube",
+  "short_name": "Rotating 3D cube",
   "theme_color": "#4DBA87",
   "start_url": "/",
   "display": "standalone",
