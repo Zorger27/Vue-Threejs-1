@@ -1,6 +1,8 @@
 <script>
 import { ref, onMounted, onUnmounted } from 'vue';
 import * as THREE from 'three';
+import {OrbitControls} from "three/examples/jsm/controls/OrbitControls";
+// import { OrbitControls } from 'three-orbit-controls';
 
 export default {
   name: 'ThreeScene01',
@@ -20,6 +22,8 @@ export default {
       // renderer = new THREE.WebGLRenderer();
       renderer = new THREE.WebGLRenderer({ alpha: true });
       renderer.setSize(window.innerWidth, window.innerHeight);
+
+      const controls = new OrbitControls(camera, renderer.domElement);
 
       // Создаем геометрию и материал для куба
       const geometry = new THREE.BoxGeometry();
@@ -42,6 +46,9 @@ export default {
       // Обновляем сцену
       const animate = () => {
         requestAnimationFrame(animate);
+
+        // Обновление контролов
+        controls.update();
 
         cube.rotation.x += 0.01;
         cube.rotation.y += 0.01;

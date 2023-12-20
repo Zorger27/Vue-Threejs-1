@@ -16,7 +16,8 @@
     "baseUrl": ".",
     "types": [
       "webpack-env",
-      "three"
+      "three",
+      "three-orbit-controls"
     ],
     "paths": {
       "@/*": [
