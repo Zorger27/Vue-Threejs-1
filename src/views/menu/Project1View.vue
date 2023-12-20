@@ -9,6 +9,9 @@ export default {
   setup() {
     const canvasContainer = ref(null);
     let scene, camera, renderer, cube;
+    const isSmallScreen = window.innerWidth <= 768
+    const isMediumScreen = window.innerWidth > 768 && window.innerWidth <= 1020
+    const isBigScreen = window.innerWidth > 1020
 
     const init = () => {
       // Создаем сцену
@@ -65,7 +68,8 @@ export default {
     };
     const onWindowResize = () => {
       // const newWidth = 500; // новая ширина
-      const newHeight = 600; // новая высота
+      // const newHeight = 600; // новая высота
+      const newHeight = isBigScreen || isMediumScreen ? 565 : 415;
       // camera.aspect = window.innerWidth / window.innerHeight;
       camera.aspect = window.innerWidth / newHeight;
       camera.updateProjectionMatrix();
