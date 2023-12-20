@@ -2,14 +2,13 @@
 import { ref, onMounted, onUnmounted } from 'vue';
 import * as THREE from 'three';
 import {OrbitControls} from "three/examples/jsm/controls/OrbitControls";
-// import { OrbitControls } from 'three-orbit-controls';
 
 export default {
   name: 'ThreeScene01',
   setup() {
     const canvasContainer = ref(null);
     let scene, camera, renderer, cube;
-    const isSmallScreen = window.innerWidth <= 768
+    // const isSmallScreen = window.innerWidth <= 768
     const isMediumScreen = window.innerWidth > 768 && window.innerWidth <= 1020
     const isBigScreen = window.innerWidth > 1020
 
