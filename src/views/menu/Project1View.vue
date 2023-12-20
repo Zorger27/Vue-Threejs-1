@@ -16,7 +16,7 @@ export default {
 
       // Создаем камеру
       camera = new THREE.PerspectiveCamera(65, window.innerWidth / window.innerHeight, 0.1, 1000);
-      camera.position.z = 2.3;
+      camera.position.z = 3;
 
       // Создаем рендерер
       // renderer = new THREE.WebGLRenderer();
@@ -28,14 +28,19 @@ export default {
       // Создаем геометрию и материал для куба
       const geometry = new THREE.BoxGeometry();
       const materials = [
-        new THREE.MeshBasicMaterial({ color: 0xff0000, transparent: true, opacity: 0.5 }),
-        new THREE.MeshBasicMaterial({ color: 0x00ff00, transparent: true, opacity: 0.5 }),
-        new THREE.MeshBasicMaterial({ color: 0x0000ff, transparent: true, opacity: 0.5 }),
-        new THREE.MeshBasicMaterial({ color: 0xffff00, transparent: true, opacity: 0.5 }),
-        new THREE.MeshBasicMaterial({ color: 0xff00ff, transparent: true, opacity: 0.5 }),
-        new THREE.MeshBasicMaterial({ color: 0x00ffff, transparent: true, opacity: 0.5 }),
+        new THREE.MeshBasicMaterial({ color: 0xff0000, transparent: true, opacity: 1 }),
+        new THREE.MeshBasicMaterial({ color: 0x00ff00, transparent: true, opacity: 1 }),
+        new THREE.MeshBasicMaterial({ color: 0x0000ff, transparent: true, opacity: 1 }),
+        new THREE.MeshBasicMaterial({ color: 0xffff00, transparent: true, opacity: 1 }),
+        new THREE.MeshBasicMaterial({ color: 0xff00ff, transparent: true, opacity: 1 }),
+        new THREE.MeshBasicMaterial({ color: 0x00ffff, transparent: true, opacity: 1 }),
       ];
       cube = new THREE.Mesh(geometry, materials);
+      // cube.material.wireframe = true;
+      // cube.material = new THREE.MeshBasicMaterial({
+      //   color: 0x8B0000,  // Тёмно-красный цвет
+      //   wireframe: true,
+      // });
 
       // Добавляем куб на сцену
       scene.add(cube);
@@ -47,7 +52,7 @@ export default {
       const animate = () => {
         requestAnimationFrame(animate);
 
-        // Обновление контролов
+        // Обновление контроллеров для вращения сцены
         controls.update();
 
         cube.rotation.x += 0.01;
@@ -60,7 +65,7 @@ export default {
     };
     const onWindowResize = () => {
       // const newWidth = 500; // новая ширина
-      const newHeight = 400; // новая высота
+      const newHeight = 600; // новая высота
       // camera.aspect = window.innerWidth / window.innerHeight;
       camera.aspect = window.innerWidth / newHeight;
       camera.updateProjectionMatrix();
