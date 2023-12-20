@@ -19,12 +19,11 @@
     "disc": "Description"
   },
   "about": {
-    "title": "MY Portfolio",
+    "title": "Rotating 3D cube",
     "more01": "More information...",
-    "more02": "This project is a significantly expanded CV with all diplomas and certificates, a detailed description of the experience gained in previous jobs, etc.",
-    "more03": "Examples of finished programming work can be viewed on the Extra page: Calculator, To-do list, Notes, Weather, Exchange rates, Cryptocurrencies, Games, etc.",
-    "more04": "There are a LOT of interesting things here! \uD83D\uDE09\uD83E\uDD13",
-    "more05": "Welcome! \uD83E\uDD29\uD83D\uDE0E",
+    "more02": "This project provides the user with the opportunity to interact interactively with a 3D model. In this case with a cube. The model can be zoomed in/out, stopped rotating, scrolled in your direction, etc.",
+    "more03": "All this became possible thanks to the use of Three.js technology and Three.js Orbit controls.",
+    "more04": "Welcome! \uD83E\uDD29\uD83D\uDE0E",
     "technologies": "Technologies",
     "name": "Name",
     "version": "Version"

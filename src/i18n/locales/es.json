@@ -19,12 +19,11 @@
     "disc": "Descripción"
   },
   "about": {
-    "title": "MI Portafolio",
+    "title": "Cubo 3D giratorio",
     "more01": "Más información...",
-    "more02": "Este proyecto es un CV significativamente ampliado con todos los diplomas y certificados, una descripción detallada de la experiencia adquirida en trabajos anteriores, etc.",
-    "more03": "Los ejemplos del trabajo de programación terminado se pueden ver en la página Extra: Calculadora, Lista de tareas, Notas, Clima, Tipos de cambio, Criptomonedas, Juegos, etc.",
-    "more04": "¡Hay MUCHAS cosas interesantes aquí! \uD83D\uDE09\uD83E\uDD13",
-    "more05": "¡Bienvenido! \uD83E\uDD29\uD83D\uDE0E",
+    "more02": "Este proyecto brinda al usuario la oportunidad de interactuar interactivamente con un modelo 3D. En este caso con un cubo. El modelo se puede acercar o alejar, dejar de girar, desplazar en su dirección, etc.",
+    "more03": "Todo esto fue posible gracias al uso de la tecnología Three.js y los controles Three.js Orbit.",
+    "more04": "¡Bienvenido! \uD83E\uDD29\uD83D\uDE0E",
     "technologies": "Tecnologías",
     "name": "Nombre",
     "version": "Versión"

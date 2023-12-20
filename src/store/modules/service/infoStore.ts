@@ -57,36 +57,30 @@ const state = {
       },
       {
         id: 10,
-        title: "Grid CSS",
-        version: "",
-        url: "https://developer.mozilla.org/ru/docs/Web/CSS/CSS_Grid_Layout"
-      },
-      {
-        id: 11,
         title: "JavaScript",
         version: "",
         url: "https://developer.mozilla.org/ru/docs/Learn/JavaScript"
       },
       {
-        id: 12,
+        id: 11,
         title: "TypeScript",
         version: "4.5.5",
         url: "https://www.typescriptlang.org/"
       },
       {
-        id: 13,
+        id: 12,
         title: "Axios",
         version: "1.6.2",
         url: "https://axios-http.com"
       },
       {
-        id: 14,
+        id: 13,
         title: "Google Search Console",
         version: "",
         url: "https://search.google.com/search-console"
       },
       {
-        id: 15,
+        id: 14,
         title: "Google Analytics",
         version: "4.0",
         url: "https://analytics.google.com"
