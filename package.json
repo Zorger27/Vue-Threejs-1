@@ -1,6 +1,6 @@
 {
-  "name": "vue-start-template",
-  "description": "Vue.js Start template",
+  "name": "vue-threejs-1",
+  "description": "Rotating 3D cube (Vue.js with TypeScript & Three.js)",
   "version": "0.1.0",
   "private": true,
   "scripts": {
