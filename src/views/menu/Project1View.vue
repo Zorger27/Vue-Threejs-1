@@ -9,26 +9,32 @@ export default {
     const canvasContainer = ref(null);
     let scene, camera, renderer, cube;
     // const isSmallScreen = window.innerWidth <= 768
-    const isMediumScreen = window.innerWidth > 768 && window.innerWidth <= 1020
-    const isBigScreen = window.innerWidth > 1020
+    // const isMediumScreen = window.innerWidth > 768 && window.innerWidth <= 1020
+    // const isBigScreen = window.innerWidth > 1020
 
     const init = () => {
       // Создаем сцену
       scene = new THREE.Scene();
 
       // Создаем камеру
-      camera = new THREE.PerspectiveCamera(65, window.innerWidth / window.innerHeight, 0.1, 1000);
+      // camera = new THREE.PerspectiveCamera(65, window.innerWidth / window.innerHeight, 0.1, 1000);
+      camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight);
       camera.position.z = 3;
 
       // Создаем рендерер
       // renderer = new THREE.WebGLRenderer();
       renderer = new THREE.WebGLRenderer({ alpha: true });
+      // renderer.setSize(window.innerWidth, window.innerHeight);
       renderer.setSize(window.innerWidth, window.innerHeight);
 
+
       const controls = new OrbitControls(camera, renderer.domElement);
+      controls.enableDamping = true;
+
+      scene.add(camera);
 
       // Создаем геометрию и материал для куба
-      const geometry = new THREE.BoxGeometry();
+      const geometry = new THREE.BoxGeometry(1, 1, 1);
       const materials = [
         new THREE.MeshBasicMaterial({ color: 0xff0000, transparent: true, opacity: 1 }),
         new THREE.MeshBasicMaterial({ color: 0x00ff00, transparent: true, opacity: 1 }),
@@ -65,16 +71,30 @@ export default {
 
       animate();
     };
-    const onWindowResize = () => {
-      // const newWidth = 500; // новая ширина
-      // const newHeight = 600; // новая высота
-      const newHeight = isBigScreen || isMediumScreen ? 565 : 415;
-      // camera.aspect = window.innerWidth / window.innerHeight;
-      camera.aspect = window.innerWidth / newHeight;
-      camera.updateProjectionMatrix();
-      // renderer.setSize(window.innerWidth, window.innerHeight);
-      renderer.setSize(window.innerWidth, newHeight);
+    // const onWindowResize = () => {
+    //   // const newHeight = isBigScreen || isMediumScreen ? 610 : 420;
+    //   let newHeight;
+    //
+    //   if (isBigScreen) {
+    //     newHeight = 610;
+    //   } else if (isMediumScreen){
+    //     newHeight = 620;
+    //   } else if (isSmallScreen) {
+    //     newHeight = 630;
+    //   }
+    //   camera.aspect = window.innerWidth / newHeight;
+    //   camera.updateProjectionMatrix();
+    //   renderer.setSize(window.innerWidth, newHeight);
+    // };
+    // window.addEventListener('resize', onWindowResize);
 
+    const onWindowResize = () => {
+      camera.aspect = window.innerWidth / window.innerHeight;
+      camera.updateProjectionMatrix();
+
+      renderer.setSize(window.innerWidth, window.innerHeight);
+      renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+      // renderer.render(scene, camera);
     };
 
     window.addEventListener('resize', onWindowResize);
@@ -111,9 +131,11 @@ export default {
   background: linear-gradient(to bottom, rgb(255, 249, 229), rgb(255, 240, 244)) no-repeat center;
   h1 {font-size: 2.5rem;margin: 0.7rem auto;color: black;}
   .scene-container {
-    height: 100%;
+    position: fixed;
+    transform: translate(0,-10%);
   }
 }
+
 @media(max-width: 1020px) {
   .container {
     h1 {font-size: 2.3rem;margin: 0.6rem auto;}
