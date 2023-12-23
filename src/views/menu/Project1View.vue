@@ -8,9 +8,6 @@ export default {
   setup() {
     const canvasContainer = ref(null);
     let scene, camera, renderer, cube;
-    // const isSmallScreen = window.innerWidth <= 768
-    // const isMediumScreen = window.innerWidth > 768 && window.innerWidth <= 1020
-    // const isBigScreen = window.innerWidth > 1020
 
     const init = () => {
       // Создаем сцену
@@ -44,11 +41,6 @@ export default {
         new THREE.MeshBasicMaterial({ color: 0x00ffff, transparent: true, opacity: 1 }),
       ];
       cube = new THREE.Mesh(geometry, materials);
-      // cube.material.wireframe = true;
-      // cube.material = new THREE.MeshBasicMaterial({
-      //   color: 0x8B0000,  // Тёмно-красный цвет
-      //   wireframe: true,
-      // });
 
       // Добавляем куб на сцену
       scene.add(cube);
@@ -71,22 +63,6 @@ export default {
 
       animate();
     };
-    // const onWindowResize = () => {
-    //   // const newHeight = isBigScreen || isMediumScreen ? 610 : 420;
-    //   let newHeight;
-    //
-    //   if (isBigScreen) {
-    //     newHeight = 610;
-    //   } else if (isMediumScreen){
-    //     newHeight = 620;
-    //   } else if (isSmallScreen) {
-    //     newHeight = 630;
-    //   }
-    //   camera.aspect = window.innerWidth / newHeight;
-    //   camera.updateProjectionMatrix();
-    //   renderer.setSize(window.innerWidth, newHeight);
-    // };
-    // window.addEventListener('resize', onWindowResize);
 
     const onWindowResize = () => {
       camera.aspect = window.innerWidth / window.innerHeight;
@@ -97,7 +73,34 @@ export default {
       // renderer.render(scene, camera);
     };
 
+    const fullScreenView = () => {
+      const canvasContainerElement = canvasContainer.value;
+
+      if (document.fullscreenElement) {
+        document.exitFullscreen();
+      } else {
+        if (canvasContainerElement.requestFullscreen) {
+          canvasContainerElement.requestFullscreen();
+        } else if (canvasContainerElement.mozRequestFullScreen) { // Firefox
+          canvasContainerElement.mozRequestFullScreen();
+        } else if (canvasContainerElement.webkitRequestFullscreen) { // Chrome, Safari and Opera
+          canvasContainerElement.webkitRequestFullscreen();
+        } else if (canvasContainerElement.msRequestFullscreen) { // IE/Edge
+          canvasContainerElement.msRequestFullscreen();
+        }
+      }
+    };
+
     window.addEventListener('resize', onWindowResize);
+
+    window.addEventListener('keydown', (event) => {
+      if ((event.key === 'Backspace' || event.key === ' ') && document.fullscreenElement) {
+        document.exitFullscreen().catch((error) => {
+          // Обработка ошибки, если произошла
+          console.error('Exit fullscreen error:', error.message);
+        });
+      }
+    });
 
     onMounted(() => {
       init();
@@ -112,6 +115,7 @@ export default {
 
     return {
       canvasContainer,
+      fullScreenView,
     };
   },
 };
@@ -119,7 +123,7 @@ export default {
 
 <template>
   <div class="container">
-    <h1>{{ $t('project1.name') }}</h1>
+    <h1>{{ $t('project1.name') }} <i @click="fullScreenView"><span :class="['fa', 'fa-expand-arrows-alt']"></span></i></h1>
     <line></line>
     <div class="scene-container" ref="canvasContainer"></div>
   </div>
@@ -131,8 +135,12 @@ export default {
   background: linear-gradient(to bottom, rgb(255, 249, 229), rgb(255, 240, 244)) no-repeat center;
   h1 {font-size: 2.5rem;margin: 0.7rem auto;color: black;}
   .scene-container {
-    position: fixed;
-    transform: translate(0,-10%);
+    max-height: 70vh;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }
 
@@ -145,6 +153,7 @@ export default {
 @media (max-width: 768px) {
   .container {
     h1 {font-size: 2rem;margin: 0.5rem auto;}
+    //.scene-container {max-height: 65vh;}
   }
 }
 </style>
