@@ -9,7 +9,7 @@ module.exports = {
       entry: 'src/main.ts',
       template: 'public/index.html',
       filename: 'index.html',
-      title: 'Rotating 3D cube',
+      title: '3D cube № 01',
     }
   },
   pwa: {
@@ -56,11 +56,11 @@ module.exports = {
         useHash: false,
         metas: [
           // {attributes: {name: 'google-site-verification', content: 'Gq9vrXtN91P1JteGFo-xrlLKT0PR8u-4P4xs21oUr8Y'}},
-          {attributes: {name: 'description', content: 'Rotating 3D cube (Vue.js with TypeScript & Three.js)'}},
-          {attributes: {property: 'og:title', content: 'Rotating 3D cube'}},
-          {attributes: {property: 'twitter:title', content: 'Rotating 3D cube'}},
-          {attributes: {property: 'og:description', content: 'Rotating 3D cube (Vue.js with TypeScript & Three.js)'}},
-          {attributes: {property: 'twitter:description', content: 'Rotating 3D cube (Vue.js with TypeScript & Three.js)'}},
+          {attributes: {name: 'description', content: '3D cube (Vue.js + TypeScript & Three.js)'}},
+          {attributes: {property: 'og:title', content: '3D cube № 01'}},
+          {attributes: {property: 'twitter:title', content: '3D cube № 01'}},
+          {attributes: {property: 'og:description', content: '3D cube (Vue.js + TypeScript & Three.js)'}},
+          {attributes: {property: 'twitter:description', content: '3D cube (Vue.js + TypeScript & Three.js)'}},
           {attributes: {property: 'og:image', content: 'https://vue-threejs-1.vercel.app/assets/ogimage/image_all.jpg'}},
           {attributes: {property: 'twitter:image', content: 'https://vue-threejs-1.vercel.app/assets/ogimage/image_all.jpg'}},
           {attributes: {property: 'og:url', content: 'https://vue-threejs-1.vercel.app'}},
@@ -76,8 +76,8 @@ module.exports = {
         prefix: 'assets/favicon/', // Этот префикс для файла index.html, чтобы правильно прописать пути иконок с сервера!
         manifest: './src/assets/manifest/manifest.webmanifest',
         favicons: {
-          appName: 'Three.js project',
-          appDescription: 'Rotating 3D cube (Vue.js with TypeScript & Three.js)',
+          appName: '3D cube № 01',
+          appDescription: '3D cube (Vue.js + TypeScript & Three.js)',
           developerName: 'Zorger',
           developerURL: null
         }

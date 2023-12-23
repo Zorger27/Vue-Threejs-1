@@ -1,6 +1,6 @@
 {
-  "name": "Rotating 3D cube",
-  "short_name": "Rotating 3D cube",
+  "name": "3D cube № 01",
+  "short_name": "3D cube № 01",
   "theme_color": "#4DBA87",
   "start_url": "/",
   "display": "standalone",
