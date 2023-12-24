@@ -13,7 +13,7 @@ const routes: Array<RouteRecordRaw> = [
       metaTags: [
         {
           property: 'og:title',
-          content: '3D cube № 01'
+          content: '3D cube №1'
         },
         {
           property: 'og:description',

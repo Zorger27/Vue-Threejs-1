@@ -9,7 +9,7 @@ module.exports = {
       entry: 'src/main.ts',
       template: 'public/index.html',
       filename: 'index.html',
-      title: '3D cube № 01',
+      title: '3D cube №1',
     }
   },
   pwa: {
@@ -57,8 +57,8 @@ module.exports = {
         metas: [
           // {attributes: {name: 'google-site-verification', content: 'Gq9vrXtN91P1JteGFo-xrlLKT0PR8u-4P4xs21oUr8Y'}},
           {attributes: {name: 'description', content: '3D cube (Vue.js + TypeScript & Three.js)'}},
-          {attributes: {property: 'og:title', content: '3D cube № 01'}},
-          {attributes: {property: 'twitter:title', content: '3D cube № 01'}},
+          {attributes: {property: 'og:title', content: '3D cube №1'}},
+          {attributes: {property: 'twitter:title', content: '3D cube №1'}},
           {attributes: {property: 'og:description', content: '3D cube (Vue.js + TypeScript & Three.js)'}},
           {attributes: {property: 'twitter:description', content: '3D cube (Vue.js + TypeScript & Three.js)'}},
           {attributes: {property: 'og:image', content: 'https://vue-threejs-1.vercel.app/assets/ogimage/image_all.jpg'}},
@@ -76,7 +76,7 @@ module.exports = {
         prefix: 'assets/favicon/', // Этот префикс для файла index.html, чтобы правильно прописать пути иконок с сервера!
         manifest: './src/assets/manifest/manifest.webmanifest',
         favicons: {
-          appName: '3D cube № 01',
+          appName: '3D cube №1',
           appDescription: '3D cube (Vue.js + TypeScript & Three.js)',
           developerName: 'Zorger',
           developerURL: null
