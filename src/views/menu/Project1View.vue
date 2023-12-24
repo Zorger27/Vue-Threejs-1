@@ -153,7 +153,6 @@ export default {
 @media (max-width: 768px) {
   .container {
     h1 {font-size: 2rem;margin: 0.5rem auto;}
-    //.scene-container {max-height: 65vh;}
-  }
+    .fa.fa-expand-arrows-alt {display: none;}  }
 }
 </style>
