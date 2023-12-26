@@ -9,7 +9,7 @@ const routes: Array<RouteRecordRaw> = [
     name: 'project1',
     component: ThreeScene01,
     meta: {
-      title: 'Project',
+      title: '3D cube',
       metaTags: [
         {
           property: 'og:title',
