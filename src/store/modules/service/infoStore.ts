@@ -67,24 +67,6 @@ const state = {
         version: "4.5.5",
         url: "https://www.typescriptlang.org/"
       },
-      {
-        id: 12,
-        title: "Axios",
-        version: "1.6.2",
-        url: "https://axios-http.com"
-      },
-      {
-        id: 13,
-        title: "Google Search Console",
-        version: "",
-        url: "https://search.google.com/search-console"
-      },
-      {
-        id: 14,
-        title: "Google Analytics",
-        version: "4.0",
-        url: "https://analytics.google.com"
-      },
     ]
 };
 const getters = {};
