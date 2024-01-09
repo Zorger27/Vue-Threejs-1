@@ -2,9 +2,12 @@
 import { ref, onMounted, onUnmounted } from 'vue';
 import * as THREE from 'three';
 import {OrbitControls} from "three/examples/jsm/controls/OrbitControls";
+import CanvasFullScreen from "@/components/util/CanvasFullScreen.vue";
+import ToggleFullScreen from "@/components/util/ToggleFullScreen.vue";
 
 export default {
   name: 'ThreeScene01',
+  components: {ToggleFullScreen, CanvasFullScreen},
   setup() {
     const canvasContainer = ref(null);
     let scene, camera, renderer, cube;
@@ -73,34 +76,7 @@ export default {
       // renderer.render(scene, camera);
     };
 
-    const fullScreenView = () => {
-      const canvasContainerElement = canvasContainer.value;
-
-      if (document.fullscreenElement) {
-        document.exitFullscreen();
-      } else {
-        if (canvasContainerElement.requestFullscreen) {
-          canvasContainerElement.requestFullscreen();
-        } else if (canvasContainerElement.mozRequestFullScreen) { // Firefox
-          canvasContainerElement.mozRequestFullScreen();
-        } else if (canvasContainerElement.webkitRequestFullscreen) { // Chrome, Safari and Opera
-          canvasContainerElement.webkitRequestFullscreen();
-        } else if (canvasContainerElement.msRequestFullscreen) { // IE/Edge
-          canvasContainerElement.msRequestFullscreen();
-        }
-      }
-    };
-
     window.addEventListener('resize', onWindowResize);
-
-    window.addEventListener('keydown', (event) => {
-      if ((event.key === 'Backspace' || event.key === ' ') && document.fullscreenElement) {
-        document.exitFullscreen().catch((error) => {
-          // Обработка ошибки, если произошла
-          console.error('Exit fullscreen error:', error.message);
-        });
-      }
-    });
 
     onMounted(() => {
       init();
@@ -114,8 +90,7 @@ export default {
     });
 
     return {
-      canvasContainer,
-      fullScreenView,
+      canvasContainer
     };
   },
 };
@@ -123,7 +98,7 @@ export default {
 
 <template>
   <div class="container">
-    <h1>{{ $t('project1.name') }} <i @click="fullScreenView"><span :class="['fa', 'fa-expand-arrows-alt']"></span></i></h1>
+    <h1>{{ $t('project1.name') }} <CanvasFullScreen :canvasContainer="canvasContainer"></CanvasFullScreen> <ToggleFullScreen></ToggleFullScreen></h1>
     <line></line>
     <div class="scene-container" ref="canvasContainer"></div>
   </div>
@@ -153,6 +128,6 @@ export default {
 @media (max-width: 768px) {
   .container {
     h1 {font-size: 2rem;margin: 0.5rem auto;}
-    .fa.fa-expand-arrows-alt {display: none;}  }
+  }
 }
 </style>
