@@ -1,8 +1,10 @@
 <script lang="ts">
 import {Options, Vue} from "vue-class-component";
 import infoStore from "@/store/modules/service/infoStore";
+import {openGraphMixin} from "@/assets/ogimage/openGraphMixin";
 
 @Options({
+  mixins: [openGraphMixin],
   computed: {infoStore() {return infoStore}},
   data() {
     return {
@@ -10,10 +12,20 @@ import infoStore from "@/store/modules/service/infoStore";
       showMore: false
       }
     },
+  mounted() {
+    const mainTitle = 'About this Project';
+    const title = 'About this Project';
+    const metaDescription = '3D cube (Vue.js + TypeScript & Three.js)';
+    const description = 'About this Project (3D cube)';
+    const imageUrl = 'https://vue-threejs-1.vercel.app/assets/ogimage/bmp/about.jpg';
+    const url = 'https://vue-threejs-1.vercel.app/about';
+
+    this.setOpenGraphTags(metaDescription, title, description, imageUrl, url);
+    this.setPageTitle(mainTitle);
+  },
   methods: {changeView() {this.tableView = !this.tableView;}},
   components: {},
 })
-
 export default class About extends Vue {}
 </script>
 

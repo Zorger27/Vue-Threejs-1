@@ -4,10 +4,23 @@ import * as THREE from 'three';
 import {OrbitControls} from "three/examples/jsm/controls/OrbitControls";
 import CanvasFullScreen from "@/components/util/CanvasFullScreen.vue";
 import ToggleFullScreen from "@/components/util/ToggleFullScreen.vue";
+import {openGraphMixin} from "@/assets/ogimage/openGraphMixin";
 
 export default {
   name: 'ThreeScene01',
+  mixins: [openGraphMixin],
   components: {ToggleFullScreen, CanvasFullScreen},
+  mounted() {
+    const mainTitle = '3D cube';
+    const title = '3D cube №1';
+    const metaDescription = '3D cube (Vue.js + TypeScript & Three.js)';
+    const description = 'Three.js project №1 (3D cube)';
+    const imageUrl = 'https://vue-threejs-1.vercel.app/assets/ogimage/bmp/cube.jpg';
+    const url = 'https://vue-threejs-1.vercel.app';
+
+    this.setOpenGraphTags(metaDescription, title, description, imageUrl, url);
+    this.setPageTitle(mainTitle);
+  },
   setup() {
     const canvasContainer = ref(null);
     let scene, camera, renderer, cube;

@@ -1,6 +1,23 @@
 <script lang="ts">
-import {Vue} from "vue-class-component";
+import {Options, Vue} from "vue-class-component";
+import {openGraphMixin} from "@/assets/ogimage/openGraphMixin";
 
+@Options({
+  mixins: [openGraphMixin],
+  mounted() {
+    const mainTitle = 'Page NOT Found';
+    const title = '3D cube №1 - Page NOT Found';
+    const metaDescription = '3D cube (Vue.js + TypeScript & Three.js)';
+    const description = '3D cube №1 - Page NOT Found';
+    const imageUrl = 'https://vue-threejs-1.vercel.app/assets/ogimage/bmp/image_404.jpg';
+    const url = 'https://vue-threejs-1.vercel.app';
+
+    this.setOpenGraphTags(metaDescription, title, description, imageUrl, url);
+    this.setPageTitle(mainTitle);
+  },
+  methods: {},
+  components: {},
+})
 export default class PageNotFound extends Vue {}
 </script>
 
