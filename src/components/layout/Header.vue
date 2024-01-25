@@ -6,9 +6,9 @@ import Header3DLogo2 from "@/components/other/Header3DLogo2.vue";
 @Options({
   // data () {return {getHeaderLogoImage: require('@/assets/img/header-logo.svg')}},
   methods: {
-    navigateToPortfolio () {
-      window.open('https://zorin.expert', '_blank');
-    }
+    about() {
+      this.$router.push('/about');
+    },
     // prg3() {
     //   this.$router.push('/project3');
     // },
@@ -46,7 +46,7 @@ export default class Header extends Vue {
       <div class="burger-menu" @click="showMenu = !showMenu">
         <i :class="['fa', showMenu ? 'fa-times' : 'fa-bars', 'burger-menu-icon']"></i>
       </div>
-      <div class="logo" @click="navigateToPortfolio">
+      <div class="logo" @click="about">
         <Header3DLogo2 class="img"></Header3DLogo2>
         <!--        <img :src="getHeaderLogoImage" alt="Header Logo Image">-->
       </div>
