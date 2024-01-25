@@ -6,7 +6,7 @@ import SocialSharing from "@/components/util/SocialSharing.vue";
   data() {
     return {
       currentYear: new Date().getFullYear(),
-      getFooterLogoImage: require('@/assets/img/footer-logo.svg')
+      getFooterLogoImage: require('@/assets/img/header-logo.svg')
     };
   },
   methods: {

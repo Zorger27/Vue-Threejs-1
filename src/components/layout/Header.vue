@@ -1,13 +1,10 @@
 <script lang="ts">
 import {Options, Vue} from "vue-class-component";
 import languageSwitcher from "@/components/util/LanguageSwitcher.vue";
+import Header3DLogo2 from "@/components/other/Header3DLogo2.vue";
 
 @Options({
-  data () {
-    return {
-      getHeaderLogoImage: require('@/assets/img/header-logo.svg')
-    }
-  },
+  // data () {return {getHeaderLogoImage: require('@/assets/img/header-logo.svg')}},
   methods: {
     navigateToPortfolio () {
       window.open('https://zorin.expert', '_blank');
@@ -16,7 +13,7 @@ import languageSwitcher from "@/components/util/LanguageSwitcher.vue";
     //   this.$router.push('/project3');
     // },
   },
-  components: {languageSwitcher},
+  components: {Header3DLogo2, languageSwitcher},
 })
 
 export default class Header extends Vue {
@@ -50,7 +47,8 @@ export default class Header extends Vue {
         <i :class="['fa', showMenu ? 'fa-times' : 'fa-bars', 'burger-menu-icon']"></i>
       </div>
       <div class="logo" @click="navigateToPortfolio">
-        <img :src="getHeaderLogoImage" alt="Header Logo Image">
+        <Header3DLogo2 class="img"></Header3DLogo2>
+        <!--        <img :src="getHeaderLogoImage" alt="Header Logo Image">-->
       </div>
       <language-switcher class="language"></language-switcher>
     </div>
@@ -94,7 +92,7 @@ header {
       margin-top: 0.3rem;
       align-self: center;
       justify-self: left;
-      img {
+      .img {
         width: 4rem;
         height: 4rem;
         cursor: pointer;
