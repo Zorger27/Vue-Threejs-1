@@ -68,7 +68,7 @@ footer {
       height: 4rem;
       max-height:100%;
       cursor: pointer;
-      padding-right: 0.2rem;
+      //padding-right: 0.2rem;
       margin: auto 0.2rem auto 0;
     }
   }
