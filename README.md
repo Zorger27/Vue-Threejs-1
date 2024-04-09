@@ -4,7 +4,6 @@
 ### Technologies: Three.js, Orbit controls, Vue.js, VueX, HTML5, CSS3, FlexBox CSS, JavaScript, TypeScript. ###
 ![Screen](https://github.com/Zorger27/Vue-Threejs-1/assets/30940416/09b4a1ca-156d-4973-8ad7-7c1d69b9440d)
 
-__Good luck! 🍀🍀🍀__
 ### Project setup (install dependencies)
 ```
 npm install
