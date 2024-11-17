@@ -19,7 +19,7 @@
     "disc": "Description"
   },
   "about": {
-    "title": "Rotating 3D cube №1",
+    "title": "Rotating 3D cube",
     "more01": "More information...",
     "more02": "This project provides the user with the opportunity to interact interactively with a 3D model. In this case with a cube. The model can be zoomed in/out, stopped rotating, scrolled in your direction, etc.",
     "more03": "All this became possible thanks to the use of Three.js technology and Three.js Orbit controls.",

@@ -19,7 +19,7 @@
     "disc": "Descripción"
   },
   "about": {
-    "title": "Cubo 3D giratorio №1",
+    "title": "Cubo 3D giratorio",
     "more01": "Más información...",
     "more02": "Este proyecto brinda al usuario la oportunidad de interactuar interactivamente con un modelo 3D. En este caso con un cubo. El modelo se puede acercar o alejar, dejar de girar, desplazar en su dirección, etc.",
     "more03": "Todo esto fue posible gracias al uso de la tecnología Three.js y los controles Three.js Orbit.",
