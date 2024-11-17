@@ -6,9 +6,9 @@ import {openGraphMixin} from "@/assets/ogimage/openGraphMixin";
   mixins: [openGraphMixin],
   mounted() {
     const mainTitle = 'Page NOT Found';
-    const title = '3D cube №1 - Page NOT Found';
+    const title = '3D cube - Page NOT Found';
     const metaDescription = '3D cube (Vue.js + TypeScript & Three.js)';
-    const description = '3D cube №1 - Page NOT Found';
+    const description = '3D cube - Page NOT Found';
     const imageUrl = 'https://vue-threejs-1.vercel.app/assets/ogimage/bmp/image_404.jpg';
     const url = 'https://vue-threejs-1.vercel.app';
 

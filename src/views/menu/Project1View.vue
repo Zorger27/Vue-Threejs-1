@@ -12,9 +12,9 @@ export default {
   components: {ToggleFullScreen, CanvasFullScreen},
   mounted() {
     const mainTitle = '3D cube';
-    const title = '3D cube №1';
+    const title = '3D cube';
     const metaDescription = '3D cube (Vue.js + TypeScript & Three.js)';
-    const description = 'Three.js project №1 (3D cube)';
+    const description = 'Three.js project (3D cube)';
     const imageUrl = 'https://vue-threejs-1.vercel.app/assets/ogimage/bmp/cube.jpg';
     const url = 'https://vue-threejs-1.vercel.app';
 

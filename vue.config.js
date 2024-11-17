@@ -9,7 +9,7 @@ module.exports = {
       entry: 'src/main.ts',
       template: 'public/index.html',
       filename: 'index.html',
-      title: '3D cube №1',
+      title: '3D cube',
     }
   },
   pwa: {
@@ -44,14 +44,15 @@ module.exports = {
         useHash: false,
         metas: [
           {attributes: {name: 'description', content: '3D cube (Vue.js + TypeScript & Three.js)'}},
-          {attributes: {property: 'og:title', content: '3D cube №1'}},
-          {attributes: {property: 'twitter:title', content: '3D cube №1'}},
+          {attributes: {property: 'og:title', content: '3D cube'}},
+          {attributes: {property: 'twitter:title', content: '3D cube'}},
           {attributes: {property: 'og:description', content: '3D cube (Vue.js + TypeScript & Three.js)'}},
           {attributes: {property: 'twitter:description', content: '3D cube (Vue.js + TypeScript & Three.js)'}},
           {attributes: {property: 'og:image', content: 'https://vue-threejs-1.vercel.app/assets/ogimage/bmp/image_all.jpg'}},
           {attributes: {property: 'twitter:image', content: 'https://vue-threejs-1.vercel.app/assets/ogimage/bmp/image_all.jpg'}},
           {attributes: {property: 'og:url', content: 'https://vue-threejs-1.vercel.app'}},
           {attributes: {property: 'og:type', content: 'website'}},
+          {attributes: {property: 'og:site_name', content: 'https://vue-threejs-1.vercel.app'}},
           {attributes: {property: 'twitter:card', content: 'summary_large_image'}}
         ]
       }),
@@ -63,7 +64,7 @@ module.exports = {
         prefix: 'assets/favicon/', // Этот префикс для файла index.html, чтобы правильно прописать пути иконок с сервера!
         manifest: './src/assets/manifest/manifest.webmanifest',
         favicons: {
-          appName: '3D cube №1',
+          appName: '3D cube',
           appDescription: '3D cube (Vue.js + TypeScript & Three.js)',
           developerName: 'Zorger',
           developerURL: null
