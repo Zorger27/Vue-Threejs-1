@@ -4,7 +4,7 @@ const state = {
       {
         id: 1,
         title: "Three.js",
-        version: "162",
+        version: "171",
         url: "https://github.com/mrdoob/three.js/releases"
       },
       {
@@ -34,7 +34,7 @@ const state = {
       {
         id: 6,
         title: "Vue i18n",
-        version: "9.8.0",
+        version: "9.9.1",
         url: "https://vue-i18n.intlify.dev"
       },
       {
@@ -64,7 +64,7 @@ const state = {
       {
         id: 11,
         title: "TypeScript",
-        version: "4.5.5",
+        version: "5.7.2",
         url: "https://www.typescriptlang.org/"
       },
     ]
