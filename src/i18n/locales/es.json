@@ -21,9 +21,10 @@
   "about": {
     "title": "Cubo 3D giratorio",
     "more01": "Más información...",
-    "more02": "Este proyecto brinda al usuario la oportunidad de interactuar interactivamente con un modelo 3D. En este caso con un cubo. El modelo se puede acercar o alejar, dejar de girar, desplazar en su dirección, etc.",
-    "more03": "Todo esto fue posible gracias al uso de la tecnología Three.js y los controles Three.js Orbit.",
-    "more04": "¡Bienvenido! \uD83E\uDD29\uD83D\uDE0E",
+    "more02": "\uD83C\uDF10 Una aplicación web con un modelo 3D dinámico e interactivo, creada con la avanzada biblioteca Three.js. \uD83C\uDFB2 El colorido cubo giratorio permite a los usuarios tener un control total del modelo: escalar, ajustar el ángulo de visión, detener y reanudar la rotación, además de girarlo en cualquier dirección para una exploración detallada.",
+    "more03": "✨ El sitio, completamente adaptable, admite tres idiomas (ucraniano, inglés, español) y se muestra perfectamente en todos los dispositivos: desde computadoras de escritorio hasta teléfonos inteligentes.",
+    "more04": "\uD83D\uDE80 La facilidad de modificación y escalabilidad hacen de este proyecto un excelente ejemplo de la incorporación de gráficos 3D en aplicaciones web modernas. Perfecto para el aprendizaje y la creación de experiencias únicas para los usuarios. \uD83D\uDCBB\uD83D\uDCF1",
+    "more05": "¡Bienvenido! \uD83E\uDD29\uD83D\uDE0E",
     "technologies": "Tecnologías",
     "name": "Nombre",
     "version": "Versión"
